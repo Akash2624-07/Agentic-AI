@@ -1,0 +1,191 @@
+{
+ "row": {
+  "week": 78,
+  "start": "2012-09-28",
+  "live_version": 27,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v28 vs v27 on week 77: MAE 31.0 vs 45.6 (+31.9%), passed",
+  "challenger": 28,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 51.30203770882911,
+  "wape": 0.17526318397354992,
+  "path": "scheduled"
+ },
+ "features": [
+  {
+   "feature": "season",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 1.0,
+   "jump": null,
+   "flags": [
+    "drift"
+   ]
+  },
+  {
+   "feature": "mnth",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 1.0,
+   "jump": null,
+   "flags": [
+    "drift"
+   ]
+  },
+  {
+   "feature": "hr",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "holiday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "weekday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "workingday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "weathersit",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.2723,
+   "psi_threshold": 0.537,
+   "psi_ratio": 0.5070763500931098,
+   "ks_pvalue": 9.31e-09,
+   "unseen": null,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "temp",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 2.6737,
+   "psi_threshold": 4.622,
+   "psi_ratio": 0.5784725227174384,
+   "ks_pvalue": 2.6e-08,
+   "unseen": null,
+   "jump": 0.0112,
+   "flags": []
+  },
+  {
+   "feature": "atemp",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 2.2147,
+   "psi_threshold": 4.636,
+   "psi_ratio": 0.4777178602243313,
+   "ks_pvalue": 3.14e-08,
+   "unseen": null,
+   "jump": 0.0582,
+   "flags": []
+  },
+  {
+   "feature": "hum",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.986,
+   "psi_threshold": 2.929,
+   "psi_ratio": 0.33663366336633666,
+   "ks_pvalue": 1.08e-07,
+   "unseen": null,
+   "jump": 0.4952,
+   "flags": []
+  },
+  {
+   "feature": "windspeed",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.3899,
+   "psi_threshold": 1.156,
+   "psi_ratio": 0.3372837370242215,
+   "ks_pvalue": 2.62e-07,
+   "unseen": null,
+   "jump": 0.6089,
+   "flags": []
+  }
+ ],
+ "error": {
+  "week": 77,
+  "version": 27,
+  "mae": 45.5712618812386,
+  "wape": 0.14029892422525764,
+  "baseline_wape": 0.12145527987931597,
+  "shadow_version": 26,
+  "shadow_wape": 0.15066548368914515,
+  "quality_ok": true,
+  "ratio": 1.155
+ },
+ "gate": {
+  "challenger": 28,
+  "champion": 27,
+  "holdout_week": 77,
+  "champion_mae": 45.5712618812386,
+  "challenger_mae": 31.025763574958237,
+  "checks": {
+   "holdout_unseen": true,
+   "data_quality_ok": true,
+   "beats_champion": true,
+   "human_approved": true
+  },
+  "passed": true,
+  "pending": false,
+  "reason": "v28 vs v27 on week 77: MAE 31.0 vs 45.6 (+31.9%), passed"
+ },
+ "details": {
+  "path": "scheduled",
+  "fallback": false
+ }
+}

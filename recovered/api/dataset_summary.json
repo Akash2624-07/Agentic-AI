@@ -1,0 +1,128 @@
+{
+ "name": "UCI Bike Sharing (hourly), Capital Bikeshare, Washington D.C., 2011-2012",
+ "rows": 17379,
+ "columns": [
+  {
+   "name": "timestamp",
+   "role": "time",
+   "description": "Start of the hour (dteday + hr)"
+  },
+  {
+   "name": "season",
+   "role": "feature",
+   "description": "1 spring, 2 summer, 3 fall, 4 winter"
+  },
+  {
+   "name": "mnth",
+   "role": "feature",
+   "description": "Month, 1-12"
+  },
+  {
+   "name": "hr",
+   "role": "feature",
+   "description": "Hour of day, 0-23"
+  },
+  {
+   "name": "holiday",
+   "role": "feature",
+   "description": "1 if a public holiday"
+  },
+  {
+   "name": "weekday",
+   "role": "feature",
+   "description": "Day of week, 0 = Sunday"
+  },
+  {
+   "name": "workingday",
+   "role": "feature",
+   "description": "1 if neither weekend nor holiday"
+  },
+  {
+   "name": "weathersit",
+   "role": "feature",
+   "description": "1 clear, 2 mist, 3 light rain/snow, 4 heavy rain/snow"
+  },
+  {
+   "name": "temp",
+   "role": "feature",
+   "description": "Temperature, normalised: \u00b0C / 41, valid range 0-1"
+  },
+  {
+   "name": "atemp",
+   "role": "feature",
+   "description": "Feels-like temperature, normalised: \u00b0C / 50"
+  },
+  {
+   "name": "hum",
+   "role": "feature",
+   "description": "Humidity, normalised: % / 100"
+  },
+  {
+   "name": "windspeed",
+   "role": "feature",
+   "description": "Wind speed, normalised: km/h / 67"
+  },
+  {
+   "name": "cnt",
+   "role": "target",
+   "description": "Bikes rented in the hour: what the model predicts"
+  }
+ ],
+ "dropped": [
+  {
+   "name": "instant",
+   "why": "Row id, no information"
+  },
+  {
+   "name": "casual",
+   "why": "Casual + registered = cnt, so it leaks the target"
+  },
+  {
+   "name": "registered",
+   "why": "Casual + registered = cnt, so it leaks the target"
+  },
+  {
+   "name": "yr",
+   "why": "Always 0 in the Jan-Mar 2011 training window, so the model can't learn from it"
+  },
+  {
+   "name": "dteday",
+   "why": "Folded into timestamp"
+  }
+ ],
+ "train": {
+  "start": "2011-01-01T00:00:00",
+  "end": "2011-03-31T23:00:00",
+  "rows": 2067,
+  "weeks": 13,
+  "mean_cnt": 72.78616352201257
+ },
+ "replay": {
+  "start": "2011-04-01T00:00:00",
+  "end": "2012-12-31T23:00:00",
+  "rows": 15312,
+  "weeks": 92,
+  "mean_cnt": 205.2135579937304
+ },
+ "faults": [
+  {
+   "kind": "temp_celsius",
+   "label": "Temperature arrives in \u00b0C instead of normalised (x41)",
+   "feature": "temp",
+   "start_week": 30,
+   "end_week": 32,
+   "start": "2011-10-28",
+   "end": "2011-11-17"
+  },
+  {
+   "kind": "hum_missing",
+   "label": "Humidity feed goes empty",
+   "feature": "hum",
+   "start_week": 60,
+   "end_week": 63,
+   "start": "2012-05-25",
+   "end": "2012-06-21"
+  }
+ ],
+ "label_delay_weeks": 1
+}

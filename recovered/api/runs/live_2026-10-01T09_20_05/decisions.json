@@ -1,0 +1,122 @@
+[
+ {
+  "week": 0,
+  "start": "2011-04-01",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 23.34997811702063,
+  "wape": 0.21105053659328915,
+  "path": "fast"
+ },
+ {
+  "week": 1,
+  "start": "2011-04-08",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "temp drifted: PSI 4.895 exceeds its 4.83 threshold and it is important; mnth is unseen at rate 1.0, but is unimportant; Week 0 WAPE was 0.2111, or 0.836\u00d7 baseline; error is not rising; Inputs passed quality checks; no feature jumped",
+  "confidence": 0.94,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 29.254548264439755,
+  "wape": 0.27708198503637926,
+  "path": "llm"
+ },
+ {
+  "week": 2,
+  "start": "2011-04-15",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks; no features jumped.; Important feature temp drifted for two weeks: PSI/threshold rose from 1.013 to 1.416.; Temp weekly mean rose gradually from 0.4013 to 0.4395 to 0.4867.; Week 1 WAPE was 0.2771, or 1.098x baseline\u2014below the 1.25x error-rise trigger.; Challenger v2 was proposed; it beat v1 on the holdout (MAE 25.44 vs 29.25) and awaits human approval. (awaiting human approval)",
+  "confidence": 0.92,
+  "gate": "v2 vs v1 on week 1: MAE 25.4 vs 29.3 (+13.1%), awaiting human approval; human approved",
+  "challenger": 2,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 44.078929328707716,
+  "wape": 0.33013508658654966,
+  "path": "llm"
+ },
+ {
+  "week": 3,
+  "start": "2011-04-22",
+  "live_version": 2,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks; no features exceeded the 3\u03c3 jump limit.; Important feature temp drifted: PSI 5.391 vs threshold 4.795.; Week 2 WAPE was 0.3301, 1.31\u00d7 the live champion baseline of 0.2524.; Temp weekly mean rose gradually from 0.4013 to 0.5506; challenger v3 was submitted and awaits human approval. (awaiting human approval)",
+  "confidence": 0.96,
+  "gate": "v3 vs v2 on week 2: MAE 38.8 vs 41.8 (+7.1%), awaiting human approval; human approved",
+  "challenger": 3,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 57.684474858883775,
+  "wape": 0.36829672695217097,
+  "path": "llm"
+ },
+ {
+  "week": 4,
+  "start": "2011-04-29",
+  "live_version": 3,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks: no missing or out-of-domain values.; Important feature temp drifted: PSI 5.597 vs threshold 5.319; no features jumped.; Week 3 quality-passed WAPE was 0.3683, 1.65x v3 baseline 0.2469.; Challenger v4 was trained, but its holdout MAE 47.33 was worse than v3's 46.18, so the gate blocked it.",
+  "confidence": 0.97,
+  "gate": "v4 vs v3 on week 3: MAE 47.3 vs 46.2 (-2.5%), blocked: beats_champion",
+  "challenger": 4,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 55.57904535654273,
+  "wape": 0.32003289072865293,
+  "path": "llm"
+ },
+ {
+  "week": 5,
+  "start": "2011-05-06",
+  "live_version": 3,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks; no feature jumped >3\u03c3.; Temp is important and drifted: PSI 6.055 vs threshold 5.319.; Week 4 WAPE was 0.320, 1.30\u00d7 baseline.; Temp means changed gradually across recent weeks, consistent with seasonal drift.; Challenger v5 passed holdout and data-quality checks and beat v3 MAE 42.8 vs 55.58; awaiting human approval. (awaiting human approval)",
+  "confidence": 0.96,
+  "gate": "v5 vs v3 on week 4: MAE 42.8 vs 55.6 (+23.0%), awaiting human approval",
+  "challenger": 5,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": null,
+  "wape": null,
+  "path": "llm"
+ }
+]

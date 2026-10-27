@@ -1,0 +1,155 @@
+[
+ {
+  "seq": 0,
+  "week": -1,
+  "event": "register",
+  "version": 1,
+  "detail": "trained on 2067 rows",
+  "train_weeks": "-13..-1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 1,
+  "week": -1,
+  "event": "promote",
+  "version": 1,
+  "detail": "initial model, Jan-Mar 2011",
+  "train_weeks": "-13..-1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 2,
+  "week": 3,
+  "event": "register",
+  "version": 2,
+  "detail": "trained on 2402 rows",
+  "train_weeks": "-13..1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 3,
+  "week": 3,
+  "event": "promote",
+  "version": 2,
+  "detail": "drift in temp and error rising; v2 vs v1 on week 2: MAE 38.8 vs 44.1 (+11.9%), passed",
+  "train_weeks": "-13..1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 4,
+  "week": 5,
+  "event": "register",
+  "version": 3,
+  "detail": "trained on 2738 rows",
+  "train_weeks": "-13..3",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 5,
+  "week": 5,
+  "event": "promote",
+  "version": 3,
+  "detail": "drift in temp and error rising; v3 vs v2 on week 4: MAE 42.8 vs 55.6 (+23.0%), passed",
+  "train_weeks": "-13..3",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 6,
+  "week": 9,
+  "event": "register",
+  "version": 4,
+  "detail": "trained on 3410 rows",
+  "train_weeks": "-13..7",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 7,
+  "week": 9,
+  "event": "promote",
+  "version": 4,
+  "detail": "scheduled check: no challenger for 4+ weeks; v4 vs v3 on week 8: MAE 35.8 vs 42.3 (+15.4%), passed",
+  "train_weeks": "-13..7",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 8,
+  "week": 13,
+  "event": "register",
+  "version": 5,
+  "detail": "trained on 4082 rows",
+  "train_weeks": "-13..11",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 9,
+  "week": 13,
+  "event": "promote",
+  "version": 5,
+  "detail": "scheduled check: no challenger for 4+ weeks; v5 vs v4 on week 12: MAE 23.5 vs 32.5 (+27.6%), passed",
+  "train_weeks": "-13..11",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 10,
+  "week": 17,
+  "event": "register",
+  "version": 6,
+  "detail": "trained on 4159 rows",
+  "train_weeks": "-9..15",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 11,
+  "week": 17,
+  "event": "reject",
+  "version": 6,
+  "detail": "v6 vs v5 on week 16: MAE 30.8 vs 30.5 (-1.0%), blocked: beats_champion",
+  "train_weeks": "-9..15",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 12,
+  "week": 21,
+  "event": "register",
+  "version": 7,
+  "detail": "trained on 4181 rows",
+  "train_weeks": "-5..19",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 13,
+  "week": 21,
+  "event": "promote",
+  "version": 7,
+  "detail": "scheduled check: no challenger for 4+ weeks; v7 vs v5 on week 20: MAE 31.7 vs 37.3 (+15.0%), passed",
+  "train_weeks": "-5..19",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 14,
+  "week": 25,
+  "event": "rollback",
+  "version": 5,
+  "detail": "replaces v7: live model worse than the one it replaced; v5 vs live v7 on weeks [23, 24]: WAPE 0.145 vs 0.168, passed",
+  "train_weeks": "-13..11",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 15,
+  "week": 26,
+  "event": "register",
+  "version": 8,
+  "detail": "trained on 4183 rows",
+  "train_weeks": "0..24",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 16,
+  "week": 26,
+  "event": "reject",
+  "version": 8,
+  "detail": "v8 vs v5 on week 25: MAE 31.0 vs 32.0 (+3.2%), blocked: beats_champion",
+  "train_weeks": "0..24",
+  "trained_on_faulty": false
+ }
+]

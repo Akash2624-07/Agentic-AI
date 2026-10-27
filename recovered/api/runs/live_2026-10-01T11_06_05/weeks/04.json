@@ -1,0 +1,791 @@
+{
+ "row": {
+  "week": 4,
+  "start": "2011-04-29",
+  "live_version": 3,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks: no missing or out-of-domain values.; Important feature temp drifted: PSI 5.597 exceeds threshold 5.319; no jump was flagged.; Week-3 clean WAPE was 0.3683, or 1.65\u00d7 baseline.; Weather means changed gradually across recent weeks, consistent with seasonality rather than a pipeline step.; Challenger v4 was proposed but failed the gate: holdout MAE 47.33 vs champion 46.18.",
+  "confidence": 0.91,
+  "gate": "v4 vs v3 on week 3: MAE 47.3 vs 46.2 (-2.5%), blocked: beats_champion",
+  "challenger": 4,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 55.57904535654273,
+  "wape": 0.32003289072865293,
+  "path": "llm"
+ },
+ "features": [
+  {
+   "feature": "season",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "mnth",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.7143,
+   "jump": null,
+   "flags": [
+    "drift"
+   ]
+  },
+  {
+   "feature": "hr",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "holiday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "weekday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "workingday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "weathersit",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.0252,
+   "psi_threshold": 1.008,
+   "psi_ratio": 0.025,
+   "ks_pvalue": 0.932,
+   "unseen": null,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "temp",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 5.5966,
+   "psi_threshold": 5.319,
+   "psi_ratio": 1.052190261327317,
+   "ks_pvalue": 1.2e-75,
+   "unseen": null,
+   "jump": 0.4406,
+   "flags": [
+    "drift"
+   ]
+  },
+  {
+   "feature": "atemp",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 5.1067,
+   "psi_threshold": 5.049,
+   "psi_ratio": 1.0114280055456526,
+   "ks_pvalue": 1.2e-75,
+   "unseen": null,
+   "jump": 0.3349,
+   "flags": [
+    "drift"
+   ]
+  },
+  {
+   "feature": "hum",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.2239,
+   "psi_threshold": 1.093,
+   "psi_ratio": 0.20484903934126258,
+   "ks_pvalue": 0.00109,
+   "unseen": null,
+   "jump": 0.7579,
+   "flags": []
+  },
+  {
+   "feature": "windspeed",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.1103,
+   "psi_threshold": 0.489,
+   "psi_ratio": 0.22556237218813904,
+   "ks_pvalue": 0.125,
+   "unseen": null,
+   "jump": 0.0598,
+   "flags": []
+  }
+ ],
+ "error": {
+  "week": 3,
+  "version": 2,
+  "mae": 57.684474858883775,
+  "wape": 0.36829672695217097,
+  "baseline_wape": 0.22257163643257194,
+  "shadow_version": 1,
+  "shadow_wape": 0.4182209539647902,
+  "quality_ok": true,
+  "ratio": 1.655
+ },
+ "gate": {
+  "challenger": 4,
+  "champion": 3,
+  "holdout_week": 3,
+  "champion_mae": 46.18181772128819,
+  "challenger_mae": 47.32680807917732,
+  "checks": {
+   "holdout_unseen": true,
+   "data_quality_ok": true,
+   "beats_champion": false
+  },
+  "passed": false,
+  "pending": false,
+  "reason": "v4 vs v3 on week 3: MAE 47.3 vs 46.2 (-2.5%), blocked: beats_champion"
+ },
+ "details": {
+  "path": "llm",
+  "confidence": 0.91,
+  "evidence": [
+   "Inputs passed quality checks: no missing or out-of-domain values.",
+   "Important feature temp drifted: PSI 5.597 exceeds threshold 5.319; no jump was flagged.",
+   "Week-3 clean WAPE was 0.3683, or 1.65\u00d7 baseline.",
+   "Weather means changed gradually across recent weeks, consistent with seasonality rather than a pipeline step.",
+   "Challenger v4 was proposed but failed the gate: holdout MAE 47.33 vs champion 46.18."
+  ],
+  "answer": {
+   "cause": "genuine_drift",
+   "action": "retrain",
+   "confidence": 0.91,
+   "evidence": [
+    "Inputs passed quality checks: no missing or out-of-domain values.",
+    "Important feature temp drifted: PSI 5.597 exceeds threshold 5.319; no jump was flagged.",
+    "Week-3 clean WAPE was 0.3683, or 1.65\u00d7 baseline.",
+    "Weather means changed gradually across recent weeks, consistent with seasonality rather than a pipeline step.",
+    "Challenger v4 was proposed but failed the gate: holdout MAE 47.33 vs champion 46.18."
+   ]
+  },
+  "raw_answer": null,
+  "notes": [],
+  "tool_calls": [
+   {
+    "turn": 1,
+    "tool": "get_monitoring_report",
+    "args": {},
+    "result": {
+     "week": 4,
+     "inputs": {
+      "week": 4,
+      "n_rows": 168,
+      "missing": {
+       "season": 0.0,
+       "mnth": 0.0,
+       "hr": 0.0,
+       "holiday": 0.0,
+       "weekday": 0.0,
+       "workingday": 0.0,
+       "weathersit": 0.0,
+       "temp": 0.0,
+       "atemp": 0.0,
+       "hum": 0.0,
+       "windspeed": 0.0
+      },
+      "out_of_domain": {
+       "season": 0.0,
+       "mnth": 0.0,
+       "hr": 0.0,
+       "holiday": 0.0,
+       "weekday": 0.0,
+       "workingday": 0.0,
+       "weathersit": 0.0,
+       "temp": 0.0,
+       "atemp": 0.0,
+       "hum": 0.0,
+       "windspeed": 0.0
+      },
+      "psi": {
+       "weathersit": 0.0252,
+       "temp": 5.597,
+       "atemp": 5.107,
+       "hum": 0.2239,
+       "windspeed": 0.1103
+      },
+      "psi_threshold": {
+       "weathersit": 1.008,
+       "temp": 5.319,
+       "atemp": 5.049,
+       "hum": 1.093,
+       "windspeed": 0.489
+      },
+      "ks_pvalue": {
+       "weathersit": 0.932,
+       "temp": 1.2e-75,
+       "atemp": 1.2e-75,
+       "hum": 0.00109,
+       "windspeed": 0.125
+      },
+      "unseen": {
+       "season": 0.0,
+       "mnth": 0.7143,
+       "hr": 0.0,
+       "holiday": 0.0,
+       "weekday": 0.0,
+       "workingday": 0.0
+      },
+      "jump": {
+       "temp": 0.4406,
+       "atemp": 0.3349,
+       "hum": 0.7579,
+       "windspeed": 0.0598
+      },
+      "quality_failed": [],
+      "drifted": [
+       "temp",
+       "atemp",
+       "mnth"
+      ],
+      "jumped": [],
+      "alerts": [
+       "drift"
+      ]
+     },
+     "labels": {
+      "week": 3,
+      "version": 2,
+      "mae": 57.68,
+      "wape": 0.3683,
+      "baseline_wape": 0.2226,
+      "shadow_version": 1,
+      "shadow_wape": 0.4182,
+      "quality_ok": true,
+      "ratio": 1.655
+     },
+     "error_rising": false,
+     "error_alert": false,
+     "weeks_since_last_challenger": 1,
+     "scheduled_check_due": false,
+     "champion": {
+      "version": 3,
+      "status": "champion",
+      "parent": 2,
+      "created_week": 3,
+      "train_weeks": [
+       -13,
+       1
+      ],
+      "n_rows": 2402,
+      "baseline_mae": 26.85,
+      "baseline_wape": 0.2469,
+      "promoted_week": 3,
+      "important_features": [
+       "hr",
+       "workingday",
+       "temp"
+      ]
+     },
+     "rollback_evidence": null,
+     "thresholds": {
+      "error_ratio": 1.25,
+      "error_weeks": 2,
+      "unseen_max_rate": 0.05,
+      "rollback_weeks": 6
+     }
+    }
+   },
+   {
+    "turn": 1,
+    "tool": "check_data_quality",
+    "args": {},
+    "result": {
+     "week": 4,
+     "n_rows": 168,
+     "features": {
+      "season": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        1,
+        4
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "mnth": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        1,
+        12
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "hr": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0,
+        23
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "holiday": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0,
+        1
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "weekday": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0,
+        6
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "workingday": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0,
+        1
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "weathersit": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        1,
+        4
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "temp": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0.0,
+        1.0
+       ],
+       "jump_std": 0.4406,
+       "mean": 0.4962
+      },
+      "atemp": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0.0,
+        1.0
+       ],
+       "jump_std": 0.3349,
+       "mean": 0.4816
+      },
+      "hum": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0.0,
+        1.0
+       ],
+       "jump_std": 0.7579,
+       "mean": 0.6187
+      },
+      "windspeed": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0.0,
+        1.0
+       ],
+       "jump_std": 0.0598,
+       "mean": 0.2474
+      }
+     },
+     "quality_failed": [],
+     "jumped": [],
+     "thresholds": {
+      "missing_or_out_of_domain_max": 0.05,
+      "jump_max_std": 3.0
+     },
+     "retraining_allowed": true
+    }
+   },
+   {
+    "turn": 1,
+    "tool": "get_feature_importance",
+    "args": {},
+    "result": {
+     "champion": 3,
+     "mae_increase_when_shuffled": {
+      "season": 0.0,
+      "mnth": 0.0,
+      "hr": 52.77,
+      "holiday": 0.0,
+      "weekday": 1.298,
+      "workingday": 9.553,
+      "weathersit": 2.545,
+      "temp": 6.131,
+      "atemp": 0.625,
+      "hum": 2.673,
+      "windspeed": 0.072
+     },
+     "share": {
+      "season": 0.0,
+      "mnth": 0.0,
+      "hr": 0.6974,
+      "holiday": 0.0,
+      "weekday": 0.01716,
+      "workingday": 0.1263,
+      "weathersit": 0.03364,
+      "temp": 0.08103,
+      "atemp": 0.00826,
+      "hum": 0.03533,
+      "windspeed": 0.0009516
+     },
+     "important_features": [
+      "hr",
+      "workingday",
+      "temp"
+     ],
+     "important_if_share_at_least": 0.05,
+     "drifted_important": [
+      "temp"
+     ],
+     "drifted_unimportant": [
+      "atemp",
+      "mnth"
+     ]
+    }
+   },
+   {
+    "turn": 1,
+    "tool": "compare_with_history",
+    "args": {
+     "weeks": 6
+    },
+    "result": {
+     "weeks": [
+      {
+       "week": 0,
+       "live_model": 1,
+       "alerts": [
+        "drift"
+       ],
+       "quality_failed": [],
+       "drifted": [
+        "mnth"
+       ],
+       "jumped": [],
+       "psi_ratio": {
+        "weathersit": 0.01981,
+        "temp": 0.5506,
+        "atemp": 0.605,
+        "hum": 0.05062,
+        "windspeed": 0.2239
+       },
+       "unseen": {
+        "mnth": 1.0
+       },
+       "jump": {
+        "temp": null,
+        "atemp": null,
+        "hum": null,
+        "windspeed": null
+       },
+       "mean": {
+        "temp": 0.4013,
+        "atemp": 0.3915,
+        "hum": 0.566,
+        "windspeed": 0.2624
+       }
+      },
+      {
+       "week": 1,
+       "live_model": 1,
+       "alerts": [
+        "drift"
+       ],
+       "quality_failed": [],
+       "drifted": [
+        "temp",
+        "mnth"
+       ],
+       "jumped": [],
+       "psi_ratio": {
+        "weathersit": 0.336,
+        "temp": 1.013,
+        "atemp": 0.9204,
+        "hum": 0.9141,
+        "windspeed": 0.1419
+       },
+       "unseen": {
+        "mnth": 1.0
+       },
+       "jump": {
+        "temp": 0.3424,
+        "atemp": 0.3804,
+        "hum": 0.9554,
+        "windspeed": 0.4036
+       },
+       "mean": {
+        "temp": 0.4395,
+        "atemp": 0.4322,
+        "hum": 0.7699,
+        "windspeed": 0.209
+       }
+      },
+      {
+       "week": 2,
+       "live_model": 1,
+       "alerts": [
+        "drift"
+       ],
+       "quality_failed": [],
+       "drifted": [
+        "temp",
+        "atemp",
+        "mnth"
+       ],
+       "jumped": [],
+       "psi_ratio": {
+        "weathersit": 0.006217,
+        "temp": 1.416,
+        "atemp": 1.377,
+        "hum": 0.08412,
+        "windspeed": 0.2459
+       },
+       "unseen": {
+        "mnth": 1.0
+       },
+       "jump": {
+        "temp": 0.4224,
+        "atemp": 0.398,
+        "hum": 0.7501,
+        "windspeed": 0.3199
+       },
+       "mean": {
+        "temp": 0.4867,
+        "atemp": 0.4748,
+        "hum": 0.6098,
+        "windspeed": 0.2513
+       }
+      },
+      {
+       "week": 3,
+       "live_model": 2,
+       "alerts": [
+        "drift"
+       ],
+       "quality_failed": [],
+       "drifted": [
+        "temp",
+        "atemp",
+        "hum"
+       ],
+       "jumped": [],
+       "psi_ratio": {
+        "weathersit": 0.04946,
+        "temp": 1.124,
+        "atemp": 1.161,
+        "hum": 2.005,
+        "windspeed": 0.4668
+       },
+       "unseen": {},
+       "jump": {
+        "temp": 0.5439,
+        "atemp": 0.4117,
+        "hum": 0.8129,
+        "windspeed": 0.0299
+       },
+       "mean": {
+        "temp": 0.5506,
+        "atemp": 0.5209,
+        "hum": 0.7815,
+        "windspeed": 0.2553
+       }
+      },
+      {
+       "week": 4,
+       "live_model": 3,
+       "alerts": [
+        "drift"
+       ],
+       "quality_failed": [],
+       "drifted": [
+        "temp",
+        "atemp",
+        "mnth"
+       ],
+       "jumped": [],
+       "psi_ratio": {
+        "weathersit": 0.025,
+        "temp": 1.052,
+        "atemp": 1.011,
+        "hum": 0.2048,
+        "windspeed": 0.2256
+       },
+       "unseen": {
+        "mnth": 0.7143
+       },
+       "jump": {
+        "temp": 0.4406,
+        "atemp": 0.3349,
+        "hum": 0.7579,
+        "windspeed": 0.0598
+       },
+       "mean": {
+        "temp": 0.4962,
+        "atemp": 0.4816,
+        "hum": 0.6187,
+        "windspeed": 0.2474
+       }
+      }
+     ],
+     "labelled_errors": [
+      {
+       "week": 0,
+       "model": 1,
+       "wape": 0.2111,
+       "ratio": 0.8361,
+       "shadow_model": null,
+       "shadow_wape": null,
+       "inputs_ok": true
+      },
+      {
+       "week": 1,
+       "model": 1,
+       "wape": 0.2771,
+       "ratio": 1.098,
+       "shadow_model": null,
+       "shadow_wape": null,
+       "inputs_ok": true
+      },
+      {
+       "week": 2,
+       "model": 1,
+       "wape": 0.3301,
+       "ratio": 1.308,
+       "shadow_model": null,
+       "shadow_wape": null,
+       "inputs_ok": true
+      },
+      {
+       "week": 3,
+       "model": 2,
+       "wape": 0.3683,
+       "ratio": 1.655,
+       "shadow_model": 1,
+       "shadow_wape": 0.4182,
+       "inputs_ok": true
+      }
+     ],
+     "model_events": [
+      {
+       "week": -1,
+       "event": "promote",
+       "version": 1,
+       "detail": "initial model, Jan-Mar 2011"
+      },
+      {
+       "week": 2,
+       "event": "promote",
+       "version": 2,
+       "detail": "agent: Important temp drifted for two consecutive weeks (PSI/threshold 1.013 then 1.416), with seasonal means rising gradually from 0.4013 to 0.4395 to 0.4867 and no jump; clean inputs, and WAPE is 1.10x baseline (below the 1.25x error-rise trigger).; v2 vs v1 on week 1: MAE 25.4 vs 29.3 (+13.1%), passed"
+      },
+      {
+       "week": 3,
+       "event": "promote",
+       "version": 3,
+       "detail": "agent: Clean week-3 inputs; important temp drifted (PSI 5.391 vs threshold 4.795), and latest clean labelled WAPE is 0.3301, 1.308x baseline 0.2524, exceeding the 1.25 drift/error trigger. Weather means rise gradually across weeks without a >3 SD jump.; v3 vs v2 on week 2: MAE 38.8 vs 41.8 (+7.1%), passed"
+      }
+     ],
+     "notes": "psi_ratio = PSI / the then-live champion's threshold (> 1 = drifted); jump in reference std vs the last clean week; mean = weekly mean of the normalised weather features (valid domain 0-1)"
+    }
+   },
+   {
+    "turn": 2,
+    "tool": "train_challenger",
+    "args": {
+     "reason": "Clean inputs; important temp drift remains (PSI 5.597 > threshold 5.319), and week-3 clean WAPE 0.3683 is 1.65x baseline, indicating genuine drift despite gradual seasonal means and no jump."
+    },
+    "result": {
+     "challenger": 4,
+     "gate": {
+      "challenger": 4,
+      "champion": 3,
+      "holdout_week": 3,
+      "champion_mae": 46.18,
+      "challenger_mae": 47.33,
+      "checks": {
+       "holdout_unseen": true,
+       "data_quality_ok": true,
+       "beats_champion": false
+      },
+      "passed": false,
+      "pending": false,
+      "reason": "v4 vs v3 on week 3: MAE 47.3 vs 46.2 (-2.5%), blocked: beats_champion"
+     },
+     "promoted": false,
+     "awaiting_human": false
+    }
+   }
+  ],
+  "llm_model": "gpt-6-luna",
+  "turns": 3,
+  "cached_turns": 3,
+  "corrected": false,
+  "fallback": false
+ }
+}
