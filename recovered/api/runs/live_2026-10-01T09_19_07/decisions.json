@@ -1,0 +1,626 @@
+[
+ {
+  "week": 0,
+  "start": "2011-04-01",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 23.34997811702063,
+  "wape": 0.21105053659328915,
+  "path": null
+ },
+ {
+  "week": 1,
+  "start": "2011-04-08",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "drift in temp, error not rising yet",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 29.254548264439755,
+  "wape": 0.27708198503637926,
+  "path": null
+ },
+ {
+  "week": 2,
+  "start": "2011-04-15",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "drift in temp, error not rising yet",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 44.078929328707716,
+  "wape": 0.33013508658654966,
+  "path": null
+ },
+ {
+  "week": 3,
+  "start": "2011-04-22",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "drift in temp and error rising",
+  "confidence": null,
+  "gate": "v2 vs v1 on week 2: MAE 38.8 vs 44.1 (+11.9%), passed",
+  "challenger": 2,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 65.50385691473527,
+  "wape": 0.4182209539647902,
+  "path": null
+ },
+ {
+  "week": 4,
+  "start": "2011-04-29",
+  "live_version": 2,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "drift in temp, error not rising yet",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 55.57904535654273,
+  "wape": 0.32003289072865293,
+  "path": null
+ },
+ {
+  "week": 5,
+  "start": "2011-05-06",
+  "live_version": 2,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "drift in temp and error rising",
+  "confidence": null,
+  "gate": "v3 vs v2 on week 4: MAE 42.8 vs 55.6 (+23.0%), passed",
+  "challenger": 3,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 62.401471879058924,
+  "wape": 0.3289853535329787,
+  "path": null
+ },
+ {
+  "week": 6,
+  "start": "2011-05-13",
+  "live_version": 3,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "drift in temp, hum, error not rising yet",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 46.970990736956665,
+  "wape": 0.2761259165724935,
+  "path": null
+ },
+ {
+  "week": 7,
+  "start": "2011-05-20",
+  "live_version": 3,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "drift in temp, error not rising yet",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 47.336431574578214,
+  "wape": 0.23526079059637134,
+  "path": null
+ },
+ {
+  "week": 8,
+  "start": "2011-05-27",
+  "live_version": 3,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "drift in temp, error not rising yet",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 42.30203910071756,
+  "wape": 0.2274375962146942,
+  "path": null
+ },
+ {
+  "week": 9,
+  "start": "2011-06-03",
+  "live_version": 3,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v4 vs v3 on week 8: MAE 35.8 vs 42.3 (+15.4%), passed",
+  "challenger": 4,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 48.45990872520186,
+  "wape": 0.24479852860552404,
+  "path": null
+ },
+ {
+  "week": 10,
+  "start": "2011-06-10",
+  "live_version": 4,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant atemp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 35.32844087478937,
+  "wape": 0.18056519826481943,
+  "path": null
+ },
+ {
+  "week": 11,
+  "start": "2011-06-17",
+  "live_version": 4,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "drift in temp, error not rising yet",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 29.669461545749776,
+  "wape": 0.1517388517058651,
+  "path": null
+ },
+ {
+  "week": 12,
+  "start": "2011-06-24",
+  "live_version": 4,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "drift in temp, error not rising yet",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 32.50331361146033,
+  "wape": 0.15341227978663075,
+  "path": null
+ },
+ {
+  "week": 13,
+  "start": "2011-07-01",
+  "live_version": 4,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v5 vs v4 on week 12: MAE 23.5 vs 32.5 (+27.6%), passed",
+  "challenger": 5,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 39.27793939518925,
+  "wape": 0.18821682929894734,
+  "path": null
+ },
+ {
+  "week": 14,
+  "start": "2011-07-08",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 25.599544400347924,
+  "wape": 0.13428430571887628,
+  "path": null
+ },
+ {
+  "week": 15,
+  "start": "2011-07-15",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 20.88446020972332,
+  "wape": 0.10356542048626004,
+  "path": null
+ },
+ {
+  "week": 16,
+  "start": "2011-07-22",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 30.532613574954677,
+  "wape": 0.18481945235253966,
+  "path": null
+ },
+ {
+  "week": 17,
+  "start": "2011-07-29",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v6 vs v5 on week 16: MAE 30.8 vs 30.5 (-1.0%), blocked: beats_champion",
+  "challenger": 6,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 26.810477497689583,
+  "wape": 0.15072146364649477,
+  "path": null
+ },
+ {
+  "week": 18,
+  "start": "2011-08-05",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 24.62256383209786,
+  "wape": 0.13155003096811704,
+  "path": null
+ },
+ {
+  "week": 19,
+  "start": "2011-08-12",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 28.96375188524436,
+  "wape": 0.15986826286168324,
+  "path": null
+ },
+ {
+  "week": 20,
+  "start": "2011-08-19",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 37.334684828620674,
+  "wape": 0.1927425189357837,
+  "path": null
+ },
+ {
+  "week": 21,
+  "start": "2011-08-26",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v7 vs v5 on week 20: MAE 31.7 vs 37.3 (+15.0%), passed",
+  "challenger": 7,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 35.982790489353306,
+  "wape": 0.18516425503302555,
+  "path": null
+ },
+ {
+  "week": 22,
+  "start": "2011-09-02",
+  "live_version": 7,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant weathersit, hum, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 35.82493679281561,
+  "wape": 0.24727399200030734,
+  "path": null
+ },
+ {
+  "week": 23,
+  "start": "2011-09-09",
+  "live_version": 7,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 24.882109219695923,
+  "wape": 0.13044458451386656,
+  "path": null
+ },
+ {
+  "week": 24,
+  "start": "2011-09-16",
+  "live_version": 7,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant weathersit, windspeed, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 37.95082500762423,
+  "wape": 0.2065217219901811,
+  "path": null
+ },
+ {
+  "week": 25,
+  "start": "2011-09-23",
+  "live_version": 7,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "bad_update",
+  "action": "rollback",
+  "reason": "v5 vs live v7 on weeks [23, 24]: WAPE 0.145 vs 0.168, passed",
+  "confidence": null,
+  "gate": "v5 vs live v7 on weeks [23, 24]: WAPE 0.145 vs 0.168, passed",
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": true,
+  "mae": 41.343872815939456,
+  "wape": 0.22905192695811333,
+  "path": null
+ },
+ {
+  "week": 26,
+  "start": "2011-09-30",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v8 vs v5 on week 25: MAE 31.0 vs 32.0 (+3.2%), blocked: beats_champion",
+  "challenger": 8,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 26.777951475502146,
+  "wape": 0.15972079272471634,
+  "path": null
+ },
+ {
+  "week": 27,
+  "start": "2011-10-07",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant windspeed, season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 37.02733457086246,
+  "wape": 0.2012224949183183,
+  "path": null
+ },
+ {
+  "week": 28,
+  "start": "2011-10-14",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 33.20524882376789,
+  "wape": 0.18583989254228486,
+  "path": null
+ },
+ {
+  "week": 29,
+  "start": "2011-10-21",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 32.414531021638126,
+  "wape": 0.19161299126091505,
+  "path": null
+ },
+ {
+  "week": 30,
+  "start": "2011-10-28",
+  "live_version": 5,
+  "fault": [
+   "temp_celsius"
+  ],
+  "alerts": [
+   "quality",
+   "drift",
+   "jump"
+  ],
+  "cause": "pipeline_fault",
+  "action": "alert",
+  "reason": "quality check failed for temp: fix the pipeline; retraining blocked",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": null,
+  "wape": null,
+  "path": null
+ }
+]

@@ -1,0 +1,171 @@
+{
+ "row": {
+  "week": 17,
+  "start": "2011-07-29",
+  "live_version": 15,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "unknown",
+  "action": "retrain",
+  "reason": "alerts: drift",
+  "confidence": null,
+  "gate": null,
+  "challenger": 16,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 30.22793134578748,
+  "wape": 0.1699334917043333,
+  "path": null
+ },
+ "features": [
+  {
+   "feature": "season",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "mnth",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.5714,
+   "jump": null,
+   "flags": [
+    "drift"
+   ]
+  },
+  {
+   "feature": "hr",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "holiday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "weekday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "workingday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "weathersit",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.0468,
+   "psi_threshold": 0.884,
+   "psi_ratio": 0.052941176470588235,
+   "ks_pvalue": 0.0946,
+   "unseen": null,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "temp",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 6.8623,
+   "psi_threshold": 7.094,
+   "psi_ratio": 0.9673385959966169,
+   "ks_pvalue": 5.13e-109,
+   "unseen": null,
+   "jump": 0.1063,
+   "flags": []
+  },
+  {
+   "feature": "atemp",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 6.1418,
+   "psi_threshold": 6.951,
+   "psi_ratio": 0.8835850956696879,
+   "ks_pvalue": 8.22e-97,
+   "unseen": null,
+   "jump": 0.2248,
+   "flags": []
+  },
+  {
+   "feature": "hum",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.2177,
+   "psi_threshold": 3.249,
+   "psi_ratio": 0.06700523237919359,
+   "ks_pvalue": 0.0148,
+   "unseen": null,
+   "jump": 0.0211,
+   "flags": []
+  },
+  {
+   "feature": "windspeed",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.2204,
+   "psi_threshold": 0.597,
+   "psi_ratio": 0.36917922948073706,
+   "ks_pvalue": 0.0367,
+   "unseen": null,
+   "jump": 0.1314,
+   "flags": []
+  }
+ ],
+ "error": {
+  "week": 16,
+  "version": 15,
+  "mae": 36.64223988794081,
+  "wape": 0.22180212946508815,
+  "baseline_wape": 0.12636395335781245,
+  "shadow_version": 14,
+  "shadow_wape": 0.19862547810884099,
+  "quality_ok": true,
+  "ratio": 1.755
+ },
+ "gate": null,
+ "details": null
+}

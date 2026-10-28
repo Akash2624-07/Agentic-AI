@@ -1,0 +1,1864 @@
+[
+ {
+  "week": 0,
+  "start": "2011-04-01",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 23.34997811702063,
+  "wape": 0.21105053659328915,
+  "path": "fast"
+ },
+ {
+  "week": 1,
+  "start": "2011-04-08",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "temp drifted: PSI 4.895 exceeds its 4.83 threshold and it is important; mnth is unseen at rate 1.0, but is unimportant; Week 0 WAPE was 0.2111, or 0.836\u00d7 baseline; error is not rising; Inputs passed quality checks; no feature jumped",
+  "confidence": 0.94,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 29.254548264439755,
+  "wape": 0.27708198503637926,
+  "path": "llm"
+ },
+ {
+  "week": 2,
+  "start": "2011-04-15",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks; no features jumped.; Important feature temp drifted, with PSI/threshold rising from 1.013 in week 1 to 1.416 in week 2.; Temp mean rose gradually from 0.4013 to 0.4395 to 0.4867; week 1 WAPE was 1.10\u00d7 baseline, below the 1.25\u00d7 trigger.; Challenger v2 passed the gate, beating v1 holdout MAE 25.44 vs 29.25 (13.1%).",
+  "confidence": 0.99,
+  "gate": "v2 vs v1 on week 1: MAE 25.4 vs 29.3 (+13.1%), passed",
+  "challenger": 2,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 44.078929328707716,
+  "wape": 0.33013508658654966,
+  "path": "llm"
+ },
+ {
+  "week": 3,
+  "start": "2011-04-22",
+  "live_version": 2,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks; no features jumped.; Temp drifted: PSI 5.391 vs threshold 4.795, and it is important.; Week-2 WAPE was 0.3301, 1.308\u00d7 baseline 0.2524.; Weather means rose gradually; week-3 means were temp 0.5506, atemp 0.5209, hum 0.7815, consistent with seasonal movement.; Challenger v3 passed the gate, beating v2 MAE 41.79 vs 38.83 (7.1%).",
+  "confidence": 0.98,
+  "gate": "v3 vs v2 on week 2: MAE 38.8 vs 41.8 (+7.1%), passed",
+  "challenger": 3,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 57.684474858883775,
+  "wape": 0.36829672695217097,
+  "path": "llm"
+ },
+ {
+  "week": 4,
+  "start": "2011-04-29",
+  "live_version": 3,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks: no missing or out-of-domain values.; Important feature temp drifted: PSI 5.597 exceeds threshold 5.319; no jump was flagged.; Week-3 clean WAPE was 0.3683, or 1.65\u00d7 baseline.; Weather means changed gradually across recent weeks, consistent with seasonality rather than a pipeline step.; Challenger v4 was proposed but failed the gate: holdout MAE 47.33 vs champion 46.18.",
+  "confidence": 0.91,
+  "gate": "v4 vs v3 on week 3: MAE 47.3 vs 46.2 (-2.5%), blocked: beats_champion",
+  "challenger": 4,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 55.57904535654273,
+  "wape": 0.32003289072865293,
+  "path": "llm"
+ },
+ {
+  "week": 5,
+  "start": "2011-05-06",
+  "live_version": 3,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks; no features jumped.; Important temp drifted: PSI 6.055 vs threshold 5.319.; Week-4 WAPE 0.320 was 1.30x baseline; history shows gradual seasonal means, not a sudden step.; Challenger v5 passed the holdout gate, beating v3 MAE 42.8 vs 55.58.",
+  "confidence": 0.98,
+  "gate": "v5 vs v3 on week 4: MAE 42.8 vs 55.6 (+23.0%), passed",
+  "challenger": 5,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 62.401471879058924,
+  "wape": 0.3289853535329787,
+  "path": "llm"
+ },
+ {
+  "week": 6,
+  "start": "2011-05-13",
+  "live_version": 5,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "All features passed quality checks; no values were out of domain.; Important temp and hum drifted, with PSI/threshold ratios 1.178 and 1.996.; Week 5 WAPE was 0.329, 1.33\u00d7 baseline 0.2469.; Challenger v6 passed the gate: holdout MAE 38.73 vs champion v5\u2019s 49.48; promoted.",
+  "confidence": 0.98,
+  "gate": "v6 vs v5 on week 5: MAE 38.7 vs 49.5 (+21.7%), passed",
+  "challenger": 6,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 46.970990736956665,
+  "wape": 0.2761259165724935,
+  "path": "llm"
+ },
+ {
+  "week": 7,
+  "start": "2011-05-20",
+  "live_version": 6,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "Inputs passed quality checks: no missing or out-of-domain values.; Important features temp and hum drifted; their PSI/threshold ratios are 1.131 and 1.072.; Week 6 WAPE was 0.2761, or 0.91\u00d7 baseline, so error is not rising.; Weather means changed gradually across recent weeks without a >3 SD jump.",
+  "confidence": 0.88,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 36.06026576391253,
+  "wape": 0.17921855007949902,
+  "path": "llm"
+ },
+ {
+  "week": 8,
+  "start": "2011-05-27",
+  "live_version": 6,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Clean inputs; no quality failures.; Temp is important and drifted: PSI 7.706 > threshold 5.689.; Week-7 WAPE 0.1792, 0.55x baseline; error is not rising.; Temp mean rose gradually; jump was only 0.5745 SD.; Challenger v7 passed the gate, with MAE 29.4 vs 36.06 for v6 (+18.5%).",
+  "confidence": 0.98,
+  "gate": "v7 vs v6 on week 7: MAE 29.4 vs 36.1 (+18.5%), passed",
+  "challenger": 7,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 43.01661212202781,
+  "wape": 0.23127950960094318,
+  "path": "llm"
+ },
+ {
+  "week": 9,
+  "start": "2011-06-03",
+  "live_version": 7,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks: no missing or out-of-domain values.; Important feature temp drifted: PSI 7.028 exceeds threshold 6.82; no sudden jump.; Week 8 WAPE 0.2313 was 0.71\u00d7 baseline, so error is not rising.; Challenger v8 failed the gate: holdout MAE 35.78 vs champion 33.31 (7.4% worse). [answer said watch, tools did retrain]",
+  "confidence": 0.94,
+  "gate": "v8 vs v7 on week 8: MAE 35.8 vs 33.3 (-7.4%), blocked: beats_champion",
+  "challenger": 8,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 31.150245025622038,
+  "wape": 0.157357583796028,
+  "path": "llm"
+ },
+ {
+  "week": 10,
+  "start": "2011-06-10",
+  "live_version": 7,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 32.880521521407715,
+  "wape": 0.16805377595365062,
+  "path": "fast"
+ },
+ {
+  "week": 11,
+  "start": "2011-06-17",
+  "live_version": 7,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 11 inputs passed quality checks; no jumps were detected.; Important feature temp drifted: PSI 7.364 exceeded its 6.82 threshold; temp was the only drifted important feature.; Week 10 WAPE was 0.1681, 0.56x the 0.2999 baseline, so error was not rising.; Temperature means rose gradually across recent weeks, consistent with seasonal movement rather than a step fault.; Challenger v9 passed the gate on week 10 holdout: MAE 24.93 vs 32.88 for v7 (+24.2%).",
+  "confidence": 0.98,
+  "gate": "v9 vs v7 on week 10: MAE 24.9 vs 32.9 (+24.2%), passed",
+  "challenger": 9,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 28.47441907790298,
+  "wape": 0.14562703294126764,
+  "path": "llm"
+ },
+ {
+  "week": 12,
+  "start": "2011-06-24",
+  "live_version": 9,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, season",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 25.227731410308632,
+  "wape": 0.11907228400662612,
+  "path": "fast"
+ },
+ {
+  "week": 13,
+  "start": "2011-07-01",
+  "live_version": 9,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 33.626865930219,
+  "wape": 0.16113732497438008,
+  "path": "fast"
+ },
+ {
+  "week": 14,
+  "start": "2011-07-08",
+  "live_version": 9,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 26.740335209160808,
+  "wape": 0.14026840837852486,
+  "path": "fast"
+ },
+ {
+  "week": 15,
+  "start": "2011-07-15",
+  "live_version": 9,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v10 vs v9 on week 14: MAE 27.0 vs 26.7 (-0.8%), blocked: beats_champion",
+  "challenger": 10,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 22.98216926218379,
+  "wape": 0.11396789763406566,
+  "path": "scheduled"
+ },
+ {
+  "week": 16,
+  "start": "2011-07-22",
+  "live_version": 9,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 31.802344884263512,
+  "wape": 0.1925053664537101,
+  "path": "fast"
+ },
+ {
+  "week": 17,
+  "start": "2011-07-29",
+  "live_version": 9,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 25.966947497670294,
+  "wape": 0.1459793595103938,
+  "path": "fast"
+ },
+ {
+  "week": 18,
+  "start": "2011-08-05",
+  "live_version": 9,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 26.10794923235651,
+  "wape": 0.13948594279013812,
+  "path": "fast"
+ },
+ {
+  "week": 19,
+  "start": "2011-08-12",
+  "live_version": 9,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v11 vs v9 on week 18: MAE 20.5 vs 26.1 (+21.5%), passed",
+  "challenger": 11,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 27.244045287377382,
+  "wape": 0.15037617400793116,
+  "path": "scheduled"
+ },
+ {
+  "week": 20,
+  "start": "2011-08-19",
+  "live_version": 11,
+  "fault": [],
+  "alerts": [],
+  "cause": "none",
+  "action": "none",
+  "reason": "all signals normal",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 32.723784337976724,
+  "wape": 0.1689384723981344,
+  "path": "fast"
+ },
+ {
+  "week": 21,
+  "start": "2011-08-26",
+  "live_version": 11,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 29.403046493871525,
+  "wape": 0.15130547480329626,
+  "path": "fast"
+ },
+ {
+  "week": 22,
+  "start": "2011-09-02",
+  "live_version": 11,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant weathersit, hum, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 35.373814225204335,
+  "wape": 0.24416021461055798,
+  "path": "fast"
+ },
+ {
+  "week": 23,
+  "start": "2011-09-09",
+  "live_version": 11,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 22 WAPE was 0.2442, 1.566\u00d7 the 0.1559 baseline, on quality-passed inputs.; Week 23 inputs passed quality checks; mnth is unseen at 100%, but it is unimportant (permutation share 0).; Scheduled check was due after 4 weeks; challenger v12 was proposed but failed the gate, improving holdout MAE only 1.8%, not 5%.",
+  "confidence": 0.94,
+  "gate": "v12 vs v11 on week 22: MAE 34.7 vs 35.4 (+1.8%), blocked: beats_champion",
+  "challenger": 12,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 22.455232022347193,
+  "wape": 0.11772166842668283,
+  "path": "llm"
+ },
+ {
+  "week": 24,
+  "start": "2011-09-16",
+  "live_version": 11,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant windspeed, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 37.397015582896785,
+  "wape": 0.20350798840135592,
+  "path": "fast"
+ },
+ {
+  "week": 25,
+  "start": "2011-09-23",
+  "live_version": 11,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "bad_update",
+  "action": "rollback",
+  "reason": "v11 was promoted in week 19, within the rollback window.; Previous v9 beat live v11 in shadow: WAPE 0.146 vs 0.1606.; The rollback gate passed and v9 was reinstated.",
+  "confidence": 0.99,
+  "gate": "v9 vs live v11 on weeks [23, 24]: WAPE 0.146 vs 0.161, passed",
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": true,
+  "mae": 36.55852506383086,
+  "wape": 0.20254030506277482,
+  "path": "llm"
+ },
+ {
+  "week": 26,
+  "start": "2011-09-30",
+  "live_version": 9,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 27.027573514100233,
+  "wape": 0.1612096978757665,
+  "path": "fast"
+ },
+ {
+  "week": 27,
+  "start": "2011-10-07",
+  "live_version": 9,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v13 vs v9 on week 26: MAE 23.2 vs 27.0 (+14.1%), passed",
+  "challenger": 13,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 37.73804050361031,
+  "wape": 0.2050847772726445,
+  "path": "scheduled"
+ },
+ {
+  "week": 28,
+  "start": "2011-10-14",
+  "live_version": 13,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 28.330452980114053,
+  "wape": 0.1585571114205921,
+  "path": "fast"
+ },
+ {
+  "week": 29,
+  "start": "2011-10-21",
+  "live_version": 13,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 28.027727050548645,
+  "wape": 0.16568114512639592,
+  "path": "fast"
+ },
+ {
+  "week": 30,
+  "start": "2011-10-28",
+  "live_version": 13,
+  "fault": [
+   "temp_celsius"
+  ],
+  "alerts": [
+   "quality",
+   "drift",
+   "jump"
+  ],
+  "cause": "pipeline_fault",
+  "action": "alert",
+  "reason": "Week 30 temp was 100% out of domain (valid range 0\u20131); quality failure exceeds the 5% limit.; Temp jumped 112.2 standard deviations, consistent with a step fault; week 29 temp passed quality.; Week 29 WAPE was 0.1657 (0.82\u00d7 baseline); its labels are clean and show no rising error.; Temp, atemp, and mnth drifted, but none are important; retraining is blocked on the failed batch.",
+  "confidence": 0.99,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 35.817037417170525,
+  "wape": 0.25494713524636253,
+  "path": "llm"
+ },
+ {
+  "week": 31,
+  "start": "2011-11-04",
+  "live_version": 13,
+  "fault": [
+   "temp_celsius"
+  ],
+  "alerts": [
+   "quality",
+   "drift",
+   "jump"
+  ],
+  "cause": "pipeline_fault",
+  "action": "alert",
+  "reason": "temp is out of domain in 100% of week 31 inputs (limit 5%); valid domain is [0,1]; temp mean is 15.59 and jumped 123.1 std; history shows the step began in week 30, when temp mean was 14.24; week 30 WAPE was 0.2549 (1.262\u00d7 baseline), but those labels had failed-quality inputs, so the error is not drift evidence; drifted features temp, atemp, and mnth are not important; drifted important features: none",
+  "confidence": 0.99,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 35.45391351948118,
+  "wape": 0.22139751965479088,
+  "path": "llm"
+ },
+ {
+  "week": 32,
+  "start": "2011-11-11",
+  "live_version": 13,
+  "fault": [
+   "temp_celsius"
+  ],
+  "alerts": [
+   "quality",
+   "drift",
+   "jump"
+  ],
+  "cause": "pipeline_fault",
+  "action": "alert",
+  "reason": "temp is out of domain in 100% of week 32 inputs (allowed maximum 5%); its mean is 17.45 vs valid domain 0\u20131; temp jumped 138.3 std; history shows the step began in week 30, unlike the gradual seasonal changes; week 31 WAPE 0.2214 is from quality-failed inputs and should not be treated as drift evidence; retraining is disallowed while this batch fails quality checks",
+  "confidence": 0.99,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 42.06666231172478,
+  "wape": 0.28608668049912006,
+  "path": "llm"
+ },
+ {
+  "week": 33,
+  "start": "2011-11-18",
+  "live_version": 13,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "Week 33 passed quality checks: no missing or out-of-domain values.; Week 32 WAPE 0.286 (1.42\u00d7 baseline) is from inputs that failed quality checks, so it is not drift evidence.; Drift is limited to unimportant temp, atemp, and mnth; no features are drifted-important.; Scheduled check was due after 6 weeks; challenger v14 passed the gate, beating v13 by 17.9% on holdout week 29.",
+  "confidence": 0.96,
+  "gate": "v14 vs v13 on week 29: MAE 23.0 vs 28.0 (+17.9%), passed",
+  "challenger": 14,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 48.58589982245702,
+  "wape": 0.42942083176414036,
+  "path": "llm"
+ },
+ {
+  "week": 34,
+  "start": "2011-11-25",
+  "live_version": 14,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 47.10487215410995,
+  "wape": 0.3412508090289937,
+  "path": "fast"
+ },
+ {
+  "week": 35,
+  "start": "2011-12-02",
+  "live_version": 14,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 34 inputs passed quality checks; WAPE was 0.3413, or 2.085x v14 baseline.; Error was rising, above the 1.25 threshold.; Drifted temp, atemp, and mnth were not important features; no quality failures or jumps.; Challenger v15 passed the gate on week 34, beating v14 MAE 47.1 vs 36.53 (22.5%).",
+  "confidence": 0.97,
+  "gate": "v15 vs v14 on week 34: MAE 36.5 vs 47.1 (+22.5%), passed",
+  "challenger": 15,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 34.72621623599285,
+  "wape": 0.2717155385239066,
+  "path": "llm"
+ },
+ {
+  "week": 36,
+  "start": "2011-12-09",
+  "live_version": 15,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 29.175687150722318,
+  "wape": 0.20564360987293265,
+  "path": "fast"
+ },
+ {
+  "week": 37,
+  "start": "2011-12-16",
+  "live_version": 15,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 30.274214662731342,
+  "wape": 0.23516127535319334,
+  "path": "fast"
+ },
+ {
+  "week": 38,
+  "start": "2011-12-23",
+  "live_version": 15,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 51.518634150154874,
+  "wape": 0.7604736656625115,
+  "path": "fast"
+ },
+ {
+  "week": 39,
+  "start": "2011-12-30",
+  "live_version": 15,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 38 clean-input WAPE was 0.7605, 1.646\u00d7 v15 baseline 0.4621.; Important-feature drift: none; drift was limited to temp, atemp, season, and mnth.; Four weeks since the last challenger; the scheduled challenger was rejected: holdout MAE 67.19 vs champion 51.52.",
+  "confidence": 0.91,
+  "gate": "v16 vs v15 on week 38: MAE 67.2 vs 51.5 (-30.4%), blocked: beats_champion",
+  "challenger": 16,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 60.91357581248123,
+  "wape": 0.5778226163410601,
+  "path": "llm"
+ },
+ {
+  "week": 40,
+  "start": "2012-01-06",
+  "live_version": 15,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 39 WAPE was 0.5778, 1.251\u00d7 the 0.4621 baseline, with error_alert=true.; Week 40 inputs passed quality checks; no features jumped.; Drift is only in unimportant season and mnth features; important features are hr, workingday, and hum.; Challenger v17 passed the gate: holdout MAE 37.17 vs champion\u2019s 60.91.",
+  "confidence": 0.99,
+  "gate": "v17 vs v15 on week 39: MAE 37.2 vs 60.9 (+39.0%), passed",
+  "challenger": 17,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 33.28733717127933,
+  "wape": 0.22884016579959035,
+  "path": "llm"
+ },
+ {
+  "week": 41,
+  "start": "2012-01-13",
+  "live_version": 17,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant atemp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 26.90068810167996,
+  "wape": 0.22553415899294912,
+  "path": "fast"
+ },
+ {
+  "week": 42,
+  "start": "2012-01-20",
+  "live_version": 17,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 31.945609959979635,
+  "wape": 0.24896147299144494,
+  "path": "fast"
+ },
+ {
+  "week": 43,
+  "start": "2012-01-27",
+  "live_version": 17,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 36.27157895903455,
+  "wape": 0.2240715302488621,
+  "path": "fast"
+ },
+ {
+  "week": 44,
+  "start": "2012-02-03",
+  "live_version": 17,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v18 vs v17 on week 43: MAE 26.9 vs 36.3 (+25.8%), passed",
+  "challenger": 18,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 40.10402694643771,
+  "wape": 0.27091834877452764,
+  "path": "scheduled"
+ },
+ {
+  "week": 45,
+  "start": "2012-02-10",
+  "live_version": 18,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 25.457953969249893,
+  "wape": 0.19399175701156537,
+  "path": "fast"
+ },
+ {
+  "week": 46,
+  "start": "2012-02-17",
+  "live_version": 18,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 26.3193066799297,
+  "wape": 0.15658393336923268,
+  "path": "fast"
+ },
+ {
+  "week": 47,
+  "start": "2012-02-24",
+  "live_version": 18,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 31.50567857436327,
+  "wape": 0.20947757781258375,
+  "path": "fast"
+ },
+ {
+  "week": 48,
+  "start": "2012-03-02",
+  "live_version": 18,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v19 vs v18 on week 47: MAE 24.7 vs 31.5 (+21.6%), passed",
+  "challenger": 19,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 33.9380124175028,
+  "wape": 0.20168327152955323,
+  "path": "scheduled"
+ },
+ {
+  "week": 49,
+  "start": "2012-03-09",
+  "live_version": 19,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 40.95075046408375,
+  "wape": 0.18360607102590776,
+  "path": "fast"
+ },
+ {
+  "week": 50,
+  "start": "2012-03-16",
+  "live_version": 19,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 77.70759298180961,
+  "wape": 0.30043669300034553,
+  "path": "fast"
+ },
+ {
+  "week": 51,
+  "start": "2012-03-23",
+  "live_version": 19,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "unclear",
+  "action": "retrain",
+  "reason": "Week 50 WAPE was 0.3004, 1.734\u00d7 baseline, but error_alert was false.; Drift was only in unimportant season/mnth; both had 100% unseen values this week.; Inputs passed quality checks; no features jumped >3 std.; Weeks since last challenger was 3, so the scheduled check was not due.",
+  "confidence": 0.98,
+  "gate": "v20 vs v19 on week 50: MAE 60.3 vs 77.7 (+22.4%), passed",
+  "challenger": 20,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 67.60367963112478,
+  "wape": 0.28957492613724695,
+  "path": "llm"
+ },
+ {
+  "week": 52,
+  "start": "2012-03-30",
+  "live_version": 20,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 63.4031008655962,
+  "wape": 0.2443307606736793,
+  "path": "fast"
+ },
+ {
+  "week": 53,
+  "start": "2012-04-06",
+  "live_version": 20,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 53 passed quality checks: no missing or out-of-domain values.; Week 52 WAPE was 0.2443, 1.45\u00d7 v20\u2019s 0.1686 baseline, with error rising.; Drifted features were unimportant; no important-feature drift or sudden jump was reported.; Challenger v21 beat v20 on holdout week 52: MAE 38.49 vs 63.4; gate passed.",
+  "confidence": 0.98,
+  "gate": "v21 vs v20 on week 52: MAE 38.5 vs 63.4 (+39.3%), passed",
+  "challenger": 21,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 45.62321371228163,
+  "wape": 0.18924681296450652,
+  "path": "llm"
+ },
+ {
+  "week": 54,
+  "start": "2012-04-13",
+  "live_version": 21,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 52.57274324076802,
+  "wape": 0.19634574982657954,
+  "path": "fast"
+ },
+ {
+  "week": 55,
+  "start": "2012-04-20",
+  "live_version": 21,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 31.36296862161863,
+  "wape": 0.15049924959816996,
+  "path": "fast"
+ },
+ {
+  "week": 56,
+  "start": "2012-04-27",
+  "live_version": 21,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 34.35210836234029,
+  "wape": 0.14194038724201696,
+  "path": "fast"
+ },
+ {
+  "week": 57,
+  "start": "2012-05-04",
+  "live_version": 21,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks: 0% missing and 0% out-of-domain.; Important feature temp drifted: PSI 5.835 exceeded its 5.265 threshold; mnth was unseen at 100%.; Week 56 WAPE was 0.142, 0.58x baseline, so error was not rising.; Scheduled check was due after 4 weeks; challenger v22 did not beat v21 on holdout (MAE 34.3 vs 34.35).",
+  "confidence": 0.97,
+  "gate": "v22 vs v21 on week 56: MAE 34.3 vs 34.4 (+0.1%), blocked: beats_champion",
+  "challenger": 22,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 47.82596935464392,
+  "wape": 0.18760537152283968,
+  "path": "llm"
+ },
+ {
+  "week": 58,
+  "start": "2012-05-11",
+  "live_version": 21,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "Quality checks passed: 0% missing and 0% out of domain.; Important feature temp drifted: PSI 5.447 exceeded its 5.265 threshold; month was unseen at 100%.; No jump: temp changed by 0.1275 std, below the 3 std limit; history shows gradual mean movement.; Week 57 WAPE was 0.188 (0.76x baseline), so error is not rising; no challenger is due after 1 week.",
+  "confidence": 0.91,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 56.46214033877258,
+  "wape": 0.2188505543435801,
+  "path": "llm"
+ },
+ {
+  "week": 59,
+  "start": "2012-05-18",
+  "live_version": 21,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "Quality checks passed: no missing or out-of-domain values.; Important feature temp drifted; its PSI was 6.166 vs threshold 5.265.; Recent temp means rose gradually from 0.5398 (week 54) to 0.6107 (week 59), with no jump flagged.; Week 58 WAPE was 0.219, 0.89x baseline; error is not rising, and the scheduled check is not due (2 weeks).",
+  "confidence": 0.94,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 60.34208408740943,
+  "wape": 0.2226840815105172,
+  "path": "llm"
+ },
+ {
+  "week": 60,
+  "start": "2012-05-25",
+  "live_version": 21,
+  "fault": [
+   "hum_missing"
+  ],
+  "alerts": [
+   "quality",
+   "drift"
+  ],
+  "cause": "pipeline_fault",
+  "action": "alert",
+  "reason": "hum is entirely missing (100%); quality-failure limit is 5%; No features are flagged as jumped; the missing hum value has no mean to compare; Retraining is blocked because this week failed quality checks; Temperature drifted (PSI 7.971 vs threshold 5.265), but clean-week WAPE was 0.2227 (0.90\u00d7 baseline)",
+  "confidence": 0.99,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 73.63136349622944,
+  "wape": 0.26985316464586706,
+  "path": "llm"
+ },
+ {
+  "week": 61,
+  "start": "2012-06-01",
+  "live_version": 21,
+  "fault": [
+   "hum_missing"
+  ],
+  "alerts": [
+   "quality",
+   "drift"
+  ],
+  "cause": "pipeline_fault",
+  "action": "alert",
+  "reason": "hum is 100% missing in week 61, above the 5% quality limit; No features jumped; hum has no mean because it is entirely missing; Week 60 WAPE 0.270 (1.10x baseline) is from failed-quality inputs and does not establish drift; Training was refused because this week's batch failed quality checks",
+  "confidence": 0.99,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 64.75477503245223,
+  "wape": 0.22460158158088975,
+  "path": "llm"
+ },
+ {
+  "week": 62,
+  "start": "2012-06-08",
+  "live_version": 21,
+  "fault": [
+   "hum_missing"
+  ],
+  "alerts": [
+   "quality",
+   "drift"
+  ],
+  "cause": "pipeline_fault",
+  "action": "alert",
+  "reason": "Hum is entirely missing this week (168/168 rows; missing rate 1.0), exceeding the 0.05 quality limit.; All features have 0 out-of-domain values; no feature is marked jumped.; Temperature drift is important (PSI 7.284 vs threshold 5.265), but WAPE 0.225 (0.91\u00d7 baseline) is from failed-quality inputs and does not establish rising error.; Scheduled retraining was due, but the tool refused because this week's batch failed quality checks.",
+  "confidence": 0.99,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 67.48100415714013,
+  "wape": 0.23495002690871966,
+  "path": "llm"
+ },
+ {
+  "week": 63,
+  "start": "2012-06-15",
+  "live_version": 21,
+  "fault": [
+   "hum_missing"
+  ],
+  "alerts": [
+   "quality",
+   "drift"
+  ],
+  "cause": "pipeline_fault",
+  "action": "alert",
+  "reason": "hum was 100% missing in week 63 (168/168 rows), exceeding the 5% quality limit; Week 63 passed no jump check; temp jump was 0.4875 std; Week 62 WAPE was 0.235 (0.95x baseline), but its inputs also failed quality checks; Challenger training was refused because week 63 failed quality checks",
+  "confidence": 0.99,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 59.488988965045195,
+  "wape": 0.21546082022480528,
+  "path": "llm"
+ },
+ {
+  "week": 64,
+  "start": "2012-06-22",
+  "live_version": 21,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 64 passed quality checks: no missing or out-of-domain inputs.; Important feature temp drifted: PSI 7.336 exceeded its 5.265 threshold; jump was only 0.867 std.; Temperature mean rose gradually from 0.6107 in week 59 to 0.7208 in week 64, consistent with seasonal movement.; Latest labeled WAPE was 0.2155 (0.87\u00d7 baseline), but the scheduled check was due after 7 weeks.; Challenger v23 passed the gate and was promoted: holdout MAE 36.6 vs champion 60.34.",
+  "confidence": 0.98,
+  "gate": "v23 vs v21 on week 59: MAE 36.6 vs 60.3 (+39.4%), passed",
+  "challenger": 23,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 70.08882589440357,
+  "wape": 0.24224746950562265,
+  "path": "llm"
+ },
+ {
+  "week": 65,
+  "start": "2012-06-29",
+  "live_version": 23,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 65 passed quality checks: no missing or out-of-domain values.; Important feature temp drifted: PSI 8.15 exceeded its 5.096 threshold; temp mean was 0.7992 with no jump.; Latest clean labelled WAPE was 0.2422, 0.98\u00d7 baseline; error is not rising.; Challenger v24 was tested but failed the holdout: MAE 45.81 vs champion v23 at 43.24. [answer said watch, tools did retrain]",
+  "confidence": 0.91,
+  "gate": "v24 vs v23 on week 64: MAE 45.8 vs 43.2 (-6.0%), blocked: beats_champion",
+  "challenger": 24,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 67.95384373357408,
+  "wape": 0.26419156130798027,
+  "path": "llm"
+ },
+ {
+  "week": 66,
+  "start": "2012-07-06",
+  "live_version": 23,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 66 passed quality checks: no missing or out-of-domain values.; Important feature temp drifted: PSI 8.15 vs threshold 5.096 (1.60x); no feature jumped.; Clean-history temp mean shifted gradually from 0.6107 (week 59) to 0.7681 (week 66).; Week 65 WAPE was 0.2642, 1.339x the 0.1973 baseline.; Challenger v25 passed the gate: holdout MAE 52.42 vs champion 67.95; promoted.",
+  "confidence": 0.98,
+  "gate": "v25 vs v23 on week 65: MAE 52.4 vs 68.0 (+22.9%), passed",
+  "challenger": 25,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 68.88475031338956,
+  "wape": 0.2673405574905157,
+  "path": "llm"
+ },
+ {
+  "week": 67,
+  "start": "2012-07-13",
+  "live_version": 25,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 42.175035479135985,
+  "wape": 0.15264021113110676,
+  "path": "fast"
+ },
+ {
+  "week": 68,
+  "start": "2012-07-20",
+  "live_version": 25,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 46.942079266562644,
+  "wape": 0.16661953723315637,
+  "path": "fast"
+ },
+ {
+  "week": 69,
+  "start": "2012-07-27",
+  "live_version": 25,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 44.27765305611092,
+  "wape": 0.1507385448939498,
+  "path": "fast"
+ },
+ {
+  "week": 70,
+  "start": "2012-08-03",
+  "live_version": 25,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v26 vs v25 on week 69: MAE 32.0 vs 44.3 (+27.8%), passed",
+  "challenger": 26,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 50.93634603438202,
+  "wape": 0.17618864159806005,
+  "path": "scheduled"
+ },
+ {
+  "week": 71,
+  "start": "2012-08-10",
+  "live_version": 26,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 31.067319062249556,
+  "wape": 0.11046625470830354,
+  "path": "fast"
+ },
+ {
+  "week": 72,
+  "start": "2012-08-17",
+  "live_version": 26,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 40.31229978732207,
+  "wape": 0.14039691455429554,
+  "path": "fast"
+ },
+ {
+  "week": 73,
+  "start": "2012-08-24",
+  "live_version": 26,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 31.942676535476465,
+  "wape": 0.11120396332055549,
+  "path": "fast"
+ },
+ {
+  "week": 74,
+  "start": "2012-08-31",
+  "live_version": 26,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v27 vs v26 on week 73: MAE 28.8 vs 31.9 (+9.8%), passed",
+  "challenger": 27,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 49.242039924118615,
+  "wape": 0.1817648299881776,
+  "path": "scheduled"
+ },
+ {
+  "week": 75,
+  "start": "2012-09-07",
+  "live_version": 27,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 41.665537664369346,
+  "wape": 0.13289181036990583,
+  "path": "fast"
+ },
+ {
+  "week": 76,
+  "start": "2012-09-14",
+  "live_version": 27,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 42.31381474751625,
+  "wape": 0.1413011762822304,
+  "path": "fast"
+ },
+ {
+  "week": 77,
+  "start": "2012-09-21",
+  "live_version": 27,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 45.5712618812386,
+  "wape": 0.14029892422525764,
+  "path": "fast"
+ },
+ {
+  "week": 78,
+  "start": "2012-09-28",
+  "live_version": 27,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v28 vs v27 on week 77: MAE 31.0 vs 45.6 (+31.9%), passed",
+  "challenger": 28,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 51.30203770882911,
+  "wape": 0.17526318397354992,
+  "path": "scheduled"
+ },
+ {
+  "week": 79,
+  "start": "2012-10-05",
+  "live_version": 28,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 39.50902567570662,
+  "wape": 0.14194252413324307,
+  "path": "fast"
+ },
+ {
+  "week": 80,
+  "start": "2012-10-12",
+  "live_version": 28,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 32.24911577187519,
+  "wape": 0.10965312897802085,
+  "path": "fast"
+ },
+ {
+  "week": 81,
+  "start": "2012-10-19",
+  "live_version": 28,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 39.30086144649721,
+  "wape": 0.1322784133311602,
+  "path": "fast"
+ },
+ {
+  "week": 82,
+  "start": "2012-10-26",
+  "live_version": 28,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "none",
+  "action": "retrain",
+  "reason": "scheduled check: no challenger for 4+ weeks",
+  "confidence": null,
+  "gate": "v29 vs v28 on week 81: MAE 32.0 vs 39.3 (+18.6%), passed",
+  "challenger": 29,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 46.04458598339463,
+  "wape": 0.1874444209655541,
+  "path": "scheduled"
+ },
+ {
+  "week": 83,
+  "start": "2012-11-02",
+  "live_version": 29,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 83 passed quality checks; no jumps were detected.; Humidity drifted: PSI 2.357 exceeded its 1.495 threshold, and hum is important.; Week 82 WAPE was 0.1874, 1.39x baseline; the inputs passed quality checks.; Challenger v30 was evaluated but blocked: holdout MAE 54.23 vs champion 51.92.",
+  "confidence": 0.96,
+  "gate": "v30 vs v29 on week 82: MAE 54.2 vs 51.9 (-4.5%), blocked: beats_champion",
+  "challenger": 30,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 67.00531826517636,
+  "wape": 0.29929890470710274,
+  "path": "llm"
+ },
+ {
+  "week": 84,
+  "start": "2012-11-09",
+  "live_version": 29,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "bad_update",
+  "action": "escalate",
+  "reason": "v29 was promoted in week 82.; Week 83 WAPE was 0.2993, 2.282\u00d7 v29\u2019s baseline of 0.1311.; On week 83, shadow v28 WAPE was lower at 0.2335.; Rollback proposal was refused: no eligible rollback evidence for the live model.",
+  "confidence": 0.9,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 63.70839612223385,
+  "wape": 0.26308311944879403,
+  "path": "llm"
+ },
+ {
+  "week": 85,
+  "start": "2012-11-16",
+  "live_version": 29,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "bad_update",
+  "action": "rollback",
+  "reason": "v29 was promoted in week 82; labelled WAPE rose to 0.2993 in week 83 and 0.2631 in week 84.; Previous champion v28 beat v29 in shadow on both weeks: WAPE 0.2335 vs 0.2993 and 0.1981 vs 0.2631.; Rollback evidence: v28 WAPE 0.2158 vs v29 0.2812; rollback proposal passed and was applied.",
+  "confidence": 0.99,
+  "gate": "v28 vs live v29 on weeks [83, 84]: WAPE 0.216 vs 0.281, passed",
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": true,
+  "mae": 78.87192896234394,
+  "wape": 0.3818583304228756,
+  "path": "llm"
+ },
+ {
+  "week": 86,
+  "start": "2012-11-23",
+  "live_version": 28,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant temp, atemp, season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 91.56090999924213,
+  "wape": 0.5414543898680395,
+  "path": "fast"
+ },
+ {
+  "week": 87,
+  "start": "2012-11-30",
+  "live_version": 28,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 86 clean-input WAPE was 0.5415, 4.015x baseline 0.1349, and rising.; Repeated drift in temp, atemp, season, and mnth; none are important to v28.; Week 87 passed quality checks; no features jumped.; Scheduled check was due after 4 weeks; challenger v31 passed the gate and was promoted, beating v28 on holdout MAE 62.36 vs 91.56.",
+  "confidence": 0.99,
+  "gate": "v31 vs v28 on week 86: MAE 62.4 vs 91.6 (+31.9%), passed",
+  "challenger": 31,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 42.935928440093,
+  "wape": 0.18283574921260326,
+  "path": "llm"
+ },
+ {
+  "week": 88,
+  "start": "2012-12-07",
+  "live_version": 31,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 32.92330353912128,
+  "wape": 0.1565114599482845,
+  "path": "fast"
+ },
+ {
+  "week": 89,
+  "start": "2012-12-14",
+  "live_version": 31,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 29.547588231627515,
+  "wape": 0.14608148150182226,
+  "path": "fast"
+ },
+ {
+  "week": 90,
+  "start": "2012-12-21",
+  "live_version": 31,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant season, mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 109.90605372252205,
+  "wape": 1.5664467174327004,
+  "path": "fast"
+ },
+ {
+  "week": 91,
+  "start": "2012-12-28",
+  "live_version": 31,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Week 90 WAPE was 1.566, 5.478x baseline, with quality checks passed.; Week 91 drift affected temp, atemp, season, and mnth; none are important features.; The 4-week scheduled challenger check was due.; Challenger v32 passed the gate on week 90: MAE 90.63 vs 109.9 for v31, a 17.5% improvement.",
+  "confidence": 0.98,
+  "gate": "v32 vs v31 on week 90: MAE 90.6 vs 109.9 (+17.5%), passed",
+  "challenger": 32,
+  "promoted": true,
+  "rolled_back": false,
+  "mae": 104.91036962777748,
+  "wape": 1.123914237726441,
+  "path": "llm"
+ }
+]

@@ -1,0 +1,1208 @@
+[
+ {
+  "seq": 0,
+  "week": -1,
+  "event": "register",
+  "version": 1,
+  "detail": "trained on 2067 rows",
+  "train_weeks": "-13..-1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 1,
+  "week": -1,
+  "event": "promote",
+  "version": 1,
+  "detail": "initial model, Jan-Mar 2011",
+  "train_weeks": "-13..-1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 2,
+  "week": 0,
+  "event": "register",
+  "version": 2,
+  "detail": "trained on 2067 rows",
+  "train_weeks": "-13..-1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 3,
+  "week": 0,
+  "event": "promote",
+  "version": 2,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..-1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 4,
+  "week": 1,
+  "event": "register",
+  "version": 3,
+  "detail": "trained on 2235 rows",
+  "train_weeks": "-13..0",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 5,
+  "week": 1,
+  "event": "promote",
+  "version": 3,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..0",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 6,
+  "week": 2,
+  "event": "register",
+  "version": 4,
+  "detail": "trained on 2402 rows",
+  "train_weeks": "-13..1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 7,
+  "week": 2,
+  "event": "promote",
+  "version": 4,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 8,
+  "week": 3,
+  "event": "register",
+  "version": 5,
+  "detail": "trained on 2570 rows",
+  "train_weeks": "-13..2",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 9,
+  "week": 3,
+  "event": "promote",
+  "version": 5,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..2",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 10,
+  "week": 4,
+  "event": "register",
+  "version": 6,
+  "detail": "trained on 2738 rows",
+  "train_weeks": "-13..3",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 11,
+  "week": 4,
+  "event": "promote",
+  "version": 6,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..3",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 12,
+  "week": 5,
+  "event": "register",
+  "version": 7,
+  "detail": "trained on 2906 rows",
+  "train_weeks": "-13..4",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 13,
+  "week": 5,
+  "event": "promote",
+  "version": 7,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..4",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 14,
+  "week": 6,
+  "event": "register",
+  "version": 8,
+  "detail": "trained on 3074 rows",
+  "train_weeks": "-13..5",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 15,
+  "week": 6,
+  "event": "promote",
+  "version": 8,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..5",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 16,
+  "week": 7,
+  "event": "register",
+  "version": 9,
+  "detail": "trained on 3242 rows",
+  "train_weeks": "-13..6",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 17,
+  "week": 7,
+  "event": "promote",
+  "version": 9,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..6",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 18,
+  "week": 8,
+  "event": "register",
+  "version": 10,
+  "detail": "trained on 3410 rows",
+  "train_weeks": "-13..7",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 19,
+  "week": 8,
+  "event": "promote",
+  "version": 10,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..7",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 20,
+  "week": 9,
+  "event": "register",
+  "version": 11,
+  "detail": "trained on 3578 rows",
+  "train_weeks": "-13..8",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 21,
+  "week": 9,
+  "event": "promote",
+  "version": 11,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..8",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 22,
+  "week": 11,
+  "event": "register",
+  "version": 12,
+  "detail": "trained on 3914 rows",
+  "train_weeks": "-13..10",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 23,
+  "week": 11,
+  "event": "promote",
+  "version": 12,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..10",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 24,
+  "week": 12,
+  "event": "register",
+  "version": 13,
+  "detail": "trained on 4082 rows",
+  "train_weeks": "-13..11",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 25,
+  "week": 12,
+  "event": "promote",
+  "version": 13,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..11",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 26,
+  "week": 13,
+  "event": "register",
+  "version": 14,
+  "detail": "trained on 4250 rows",
+  "train_weeks": "-13..12",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 27,
+  "week": 13,
+  "event": "promote",
+  "version": 14,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-13..12",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 28,
+  "week": 14,
+  "event": "register",
+  "version": 15,
+  "detail": "trained on 4280 rows",
+  "train_weeks": "-12..13",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 29,
+  "week": 14,
+  "event": "promote",
+  "version": 15,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-12..13",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 30,
+  "week": 17,
+  "event": "register",
+  "version": 16,
+  "detail": "trained on 4327 rows",
+  "train_weeks": "-9..16",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 31,
+  "week": 17,
+  "event": "promote",
+  "version": 16,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-9..16",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 32,
+  "week": 18,
+  "event": "register",
+  "version": 17,
+  "detail": "trained on 4332 rows",
+  "train_weeks": "-8..17",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 33,
+  "week": 18,
+  "event": "promote",
+  "version": 17,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-8..17",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 34,
+  "week": 21,
+  "event": "register",
+  "version": 18,
+  "detail": "trained on 4349 rows",
+  "train_weeks": "-5..20",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 35,
+  "week": 21,
+  "event": "promote",
+  "version": 18,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-5..20",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 36,
+  "week": 22,
+  "event": "register",
+  "version": 19,
+  "detail": "trained on 4340 rows",
+  "train_weeks": "-4..21",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 37,
+  "week": 22,
+  "event": "promote",
+  "version": 19,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-4..21",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 38,
+  "week": 24,
+  "event": "register",
+  "version": 20,
+  "detail": "trained on 4346 rows",
+  "train_weeks": "-2..23",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 39,
+  "week": 24,
+  "event": "promote",
+  "version": 20,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-2..23",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 40,
+  "week": 25,
+  "event": "register",
+  "version": 21,
+  "detail": "trained on 4349 rows",
+  "train_weeks": "-1..24",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 41,
+  "week": 25,
+  "event": "promote",
+  "version": 21,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "-1..24",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 42,
+  "week": 26,
+  "event": "register",
+  "version": 22,
+  "detail": "trained on 4351 rows",
+  "train_weeks": "0..25",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 43,
+  "week": 26,
+  "event": "promote",
+  "version": 22,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "0..25",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 44,
+  "week": 27,
+  "event": "register",
+  "version": 23,
+  "detail": "trained on 4351 rows",
+  "train_weeks": "1..26",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 45,
+  "week": 27,
+  "event": "promote",
+  "version": 23,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "1..26",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 46,
+  "week": 29,
+  "event": "register",
+  "version": 24,
+  "detail": "trained on 4351 rows",
+  "train_weeks": "3..28",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 47,
+  "week": 29,
+  "event": "promote",
+  "version": 24,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "3..28",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 48,
+  "week": 30,
+  "event": "register",
+  "version": 25,
+  "detail": "trained on 4351 rows",
+  "train_weeks": "4..29",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 49,
+  "week": 30,
+  "event": "promote",
+  "version": 25,
+  "detail": "alerts: quality, drift, jump (no gate)",
+  "train_weeks": "4..29",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 50,
+  "week": 31,
+  "event": "register",
+  "version": 26,
+  "detail": "trained on 4351 rows",
+  "train_weeks": "5..30",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 51,
+  "week": 31,
+  "event": "promote",
+  "version": 26,
+  "detail": "alerts: quality, drift, jump (no gate)",
+  "train_weeks": "5..30",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 52,
+  "week": 32,
+  "event": "register",
+  "version": 27,
+  "detail": "trained on 4351 rows",
+  "train_weeks": "6..31",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 53,
+  "week": 32,
+  "event": "promote",
+  "version": 27,
+  "detail": "alerts: quality, drift, jump (no gate)",
+  "train_weeks": "6..31",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 54,
+  "week": 34,
+  "event": "register",
+  "version": 28,
+  "detail": "trained on 4351 rows",
+  "train_weeks": "8..33",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 55,
+  "week": 34,
+  "event": "promote",
+  "version": 28,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "8..33",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 56,
+  "week": 35,
+  "event": "register",
+  "version": 29,
+  "detail": "trained on 4350 rows",
+  "train_weeks": "9..34",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 57,
+  "week": 35,
+  "event": "promote",
+  "version": 29,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "9..34",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 58,
+  "week": 36,
+  "event": "register",
+  "version": 30,
+  "detail": "trained on 4350 rows",
+  "train_weeks": "10..35",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 59,
+  "week": 36,
+  "event": "promote",
+  "version": 30,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "10..35",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 60,
+  "week": 37,
+  "event": "register",
+  "version": 31,
+  "detail": "trained on 4350 rows",
+  "train_weeks": "11..36",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 61,
+  "week": 37,
+  "event": "promote",
+  "version": 31,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "11..36",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 62,
+  "week": 38,
+  "event": "register",
+  "version": 32,
+  "detail": "trained on 4350 rows",
+  "train_weeks": "12..37",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 63,
+  "week": 38,
+  "event": "promote",
+  "version": 32,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "12..37",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 64,
+  "week": 39,
+  "event": "register",
+  "version": 33,
+  "detail": "trained on 4347 rows",
+  "train_weeks": "13..38",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 65,
+  "week": 39,
+  "event": "promote",
+  "version": 33,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "13..38",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 66,
+  "week": 40,
+  "event": "register",
+  "version": 34,
+  "detail": "trained on 4346 rows",
+  "train_weeks": "14..39",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 67,
+  "week": 40,
+  "event": "promote",
+  "version": 34,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "14..39",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 68,
+  "week": 43,
+  "event": "register",
+  "version": 35,
+  "detail": "trained on 4344 rows",
+  "train_weeks": "17..42",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 69,
+  "week": 43,
+  "event": "promote",
+  "version": 35,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "17..42",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 70,
+  "week": 44,
+  "event": "register",
+  "version": 36,
+  "detail": "trained on 4344 rows",
+  "train_weeks": "18..43",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 71,
+  "week": 44,
+  "event": "promote",
+  "version": 36,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "18..43",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 72,
+  "week": 47,
+  "event": "register",
+  "version": 37,
+  "detail": "trained on 4341 rows",
+  "train_weeks": "21..46",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 73,
+  "week": 47,
+  "event": "promote",
+  "version": 37,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "21..46",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 74,
+  "week": 48,
+  "event": "register",
+  "version": 38,
+  "detail": "trained on 4353 rows",
+  "train_weeks": "22..47",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 75,
+  "week": 48,
+  "event": "promote",
+  "version": 38,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "22..47",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 76,
+  "week": 50,
+  "event": "register",
+  "version": 39,
+  "detail": "trained on 4355 rows",
+  "train_weeks": "24..49",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 77,
+  "week": 50,
+  "event": "promote",
+  "version": 39,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "24..49",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 78,
+  "week": 51,
+  "event": "register",
+  "version": 40,
+  "detail": "trained on 4355 rows",
+  "train_weeks": "25..50",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 79,
+  "week": 51,
+  "event": "promote",
+  "version": 40,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "25..50",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 80,
+  "week": 52,
+  "event": "register",
+  "version": 41,
+  "detail": "trained on 4355 rows",
+  "train_weeks": "26..51",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 81,
+  "week": 52,
+  "event": "promote",
+  "version": 41,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "26..51",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 82,
+  "week": 53,
+  "event": "register",
+  "version": 42,
+  "detail": "trained on 4354 rows",
+  "train_weeks": "27..52",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 83,
+  "week": 53,
+  "event": "promote",
+  "version": 42,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "27..52",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 84,
+  "week": 56,
+  "event": "register",
+  "version": 43,
+  "detail": "trained on 4354 rows",
+  "train_weeks": "30..55",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 85,
+  "week": 56,
+  "event": "promote",
+  "version": 43,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "30..55",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 86,
+  "week": 57,
+  "event": "register",
+  "version": 44,
+  "detail": "trained on 4354 rows",
+  "train_weeks": "31..56",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 87,
+  "week": 57,
+  "event": "promote",
+  "version": 44,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "31..56",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 88,
+  "week": 58,
+  "event": "register",
+  "version": 45,
+  "detail": "trained on 4354 rows",
+  "train_weeks": "32..57",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 89,
+  "week": 58,
+  "event": "promote",
+  "version": 45,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "32..57",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 90,
+  "week": 59,
+  "event": "register",
+  "version": 46,
+  "detail": "trained on 4354 rows",
+  "train_weeks": "33..58",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 91,
+  "week": 59,
+  "event": "promote",
+  "version": 46,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "33..58",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 92,
+  "week": 60,
+  "event": "register",
+  "version": 47,
+  "detail": "trained on 4354 rows",
+  "train_weeks": "34..59",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 93,
+  "week": 60,
+  "event": "promote",
+  "version": 47,
+  "detail": "alerts: quality, drift (no gate)",
+  "train_weeks": "34..59",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 94,
+  "week": 61,
+  "event": "register",
+  "version": 48,
+  "detail": "trained on 4355 rows",
+  "train_weeks": "35..60",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 95,
+  "week": 61,
+  "event": "promote",
+  "version": 48,
+  "detail": "alerts: quality, drift (no gate)",
+  "train_weeks": "35..60",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 96,
+  "week": 62,
+  "event": "register",
+  "version": 49,
+  "detail": "trained on 4355 rows",
+  "train_weeks": "36..61",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 97,
+  "week": 62,
+  "event": "promote",
+  "version": 49,
+  "detail": "alerts: quality, drift (no gate)",
+  "train_weeks": "36..61",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 98,
+  "week": 63,
+  "event": "register",
+  "version": 50,
+  "detail": "trained on 4355 rows",
+  "train_weeks": "37..62",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 99,
+  "week": 63,
+  "event": "promote",
+  "version": 50,
+  "detail": "alerts: quality, drift (no gate)",
+  "train_weeks": "37..62",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 100,
+  "week": 64,
+  "event": "register",
+  "version": 51,
+  "detail": "trained on 4355 rows",
+  "train_weeks": "38..63",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 101,
+  "week": 64,
+  "event": "promote",
+  "version": 51,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "38..63",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 102,
+  "week": 65,
+  "event": "register",
+  "version": 52,
+  "detail": "trained on 4358 rows",
+  "train_weeks": "39..64",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 103,
+  "week": 65,
+  "event": "promote",
+  "version": 52,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "39..64",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 104,
+  "week": 66,
+  "event": "register",
+  "version": 53,
+  "detail": "trained on 4359 rows",
+  "train_weeks": "40..65",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 105,
+  "week": 66,
+  "event": "promote",
+  "version": 53,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "40..65",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 106,
+  "week": 69,
+  "event": "register",
+  "version": 54,
+  "detail": "trained on 4361 rows",
+  "train_weeks": "43..68",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 107,
+  "week": 69,
+  "event": "promote",
+  "version": 54,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "43..68",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 108,
+  "week": 70,
+  "event": "register",
+  "version": 55,
+  "detail": "trained on 4361 rows",
+  "train_weeks": "44..69",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 109,
+  "week": 70,
+  "event": "promote",
+  "version": 55,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "44..69",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 110,
+  "week": 74,
+  "event": "register",
+  "version": 56,
+  "detail": "trained on 4365 rows",
+  "train_weeks": "48..73",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 111,
+  "week": 74,
+  "event": "promote",
+  "version": 56,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "48..73",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 112,
+  "week": 75,
+  "event": "register",
+  "version": 57,
+  "detail": "trained on 4365 rows",
+  "train_weeks": "49..74",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 113,
+  "week": 75,
+  "event": "promote",
+  "version": 57,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "49..74",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 114,
+  "week": 77,
+  "event": "register",
+  "version": 58,
+  "detail": "trained on 4366 rows",
+  "train_weeks": "51..76",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 115,
+  "week": 77,
+  "event": "promote",
+  "version": 58,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "51..76",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 116,
+  "week": 78,
+  "event": "register",
+  "version": 59,
+  "detail": "trained on 4366 rows",
+  "train_weeks": "52..77",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 117,
+  "week": 78,
+  "event": "promote",
+  "version": 59,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "52..77",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 118,
+  "week": 79,
+  "event": "register",
+  "version": 60,
+  "detail": "trained on 4367 rows",
+  "train_weeks": "53..78",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 119,
+  "week": 79,
+  "event": "promote",
+  "version": 60,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "53..78",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 120,
+  "week": 82,
+  "event": "register",
+  "version": 61,
+  "detail": "trained on 4368 rows",
+  "train_weeks": "56..81",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 121,
+  "week": 82,
+  "event": "promote",
+  "version": 61,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "56..81",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 122,
+  "week": 83,
+  "event": "register",
+  "version": 62,
+  "detail": "trained on 4332 rows",
+  "train_weeks": "57..82",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 123,
+  "week": 83,
+  "event": "promote",
+  "version": 62,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "57..82",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 124,
+  "week": 84,
+  "event": "register",
+  "version": 63,
+  "detail": "trained on 4331 rows",
+  "train_weeks": "58..83",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 125,
+  "week": 84,
+  "event": "promote",
+  "version": 63,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "58..83",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 126,
+  "week": 87,
+  "event": "register",
+  "version": 64,
+  "detail": "trained on 4330 rows",
+  "train_weeks": "61..86",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 127,
+  "week": 87,
+  "event": "promote",
+  "version": 64,
+  "detail": "alerts: drift, error (no gate)",
+  "train_weeks": "61..86",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 128,
+  "week": 88,
+  "event": "register",
+  "version": 65,
+  "detail": "trained on 4330 rows",
+  "train_weeks": "62..87",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 129,
+  "week": 88,
+  "event": "promote",
+  "version": 65,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "62..87",
+  "trained_on_faulty": true
+ },
+ {
+  "seq": 130,
+  "week": 90,
+  "event": "register",
+  "version": 66,
+  "detail": "trained on 4330 rows",
+  "train_weeks": "64..89",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 131,
+  "week": 90,
+  "event": "promote",
+  "version": 66,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "64..89",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 132,
+  "week": 91,
+  "event": "register",
+  "version": 67,
+  "detail": "trained on 4328 rows",
+  "train_weeks": "65..90",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 133,
+  "week": 91,
+  "event": "promote",
+  "version": 67,
+  "detail": "alerts: drift (no gate)",
+  "train_weeks": "65..90",
+  "trained_on_faulty": false
+ }
+]

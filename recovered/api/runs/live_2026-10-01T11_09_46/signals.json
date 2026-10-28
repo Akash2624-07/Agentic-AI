@@ -1,0 +1,181 @@
+{
+ "run_id": "live:2026-10-01T11:09:46",
+ "policy": "agent",
+ "weeks": [
+  {
+   "week": 0,
+   "start": "2011-04-01",
+   "fault": [],
+   "live_version": 1,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 1,
+   "start": "2011-04-08",
+   "fault": [],
+   "live_version": 1,
+   "action": "watch",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 2,
+   "start": "2011-04-15",
+   "fault": [],
+   "live_version": 1,
+   "action": "retrain",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 3,
+   "start": "2011-04-22",
+   "fault": [],
+   "live_version": 2,
+   "action": "retrain",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  }
+ ],
+ "quality": {
+  "features": [],
+  "rows": []
+ },
+ "drift": {
+  "features": [
+   "atemp",
+   "hum",
+   "temp",
+   "weathersit",
+   "windspeed"
+  ],
+  "rows": [
+   {
+    "week": 0,
+    "atemp": 0.6049714034315882,
+    "hum": 0.050619082301529505,
+    "temp": 0.550600414078675,
+    "weathersit": 0.01981032665964173,
+    "windspeed": 0.2239457831325301
+   },
+   {
+    "week": 1,
+    "atemp": 0.9204355477342719,
+    "hum": 0.9140568099053168,
+    "temp": 1.013416149068323,
+    "weathersit": 0.3360379346680717,
+    "windspeed": 0.14186746987951807
+   },
+   {
+    "week": 2,
+    "atemp": 1.3774087109546853,
+    "hum": 0.08412235979606701,
+    "temp": 1.4163768115942028,
+    "weathersit": 0.006217070600632244,
+    "windspeed": 0.24593373493975904
+   },
+   {
+    "week": 3,
+    "atemp": 1.1608748728382503,
+    "hum": 2.004947668886775,
+    "temp": 1.124400417101147,
+    "weathersit": 0.04946466809421841,
+    "windspeed": 0.4667976424361493
+   }
+  ]
+ },
+ "unseen": {
+  "features": [
+   "mnth"
+  ],
+  "rows": [
+   {
+    "week": 0,
+    "mnth": 1.0
+   },
+   {
+    "week": 1,
+    "mnth": 1.0
+   },
+   {
+    "week": 2,
+    "mnth": 1.0
+   },
+   {
+    "week": 3,
+    "mnth": 0.0
+   }
+  ]
+ },
+ "jump": {
+  "features": [
+   "atemp",
+   "hum",
+   "temp",
+   "windspeed"
+  ],
+  "rows": [
+   {
+    "week": 0,
+    "atemp": null,
+    "hum": null,
+    "temp": null,
+    "windspeed": null
+   },
+   {
+    "week": 1,
+    "atemp": 0.3804,
+    "hum": 0.9554,
+    "temp": 0.3424,
+    "windspeed": 0.4036
+   },
+   {
+    "week": 2,
+    "atemp": 0.398,
+    "hum": 0.7501,
+    "temp": 0.4224,
+    "windspeed": 0.3199
+   },
+   {
+    "week": 3,
+    "atemp": 0.4117,
+    "hum": 0.8129,
+    "temp": 0.5439,
+    "windspeed": 0.0299
+   }
+  ]
+ },
+ "error": [
+  {
+   "week": 0,
+   "ratio": 0.836,
+   "wape": 0.21105053659328915,
+   "version": 1,
+   "quality_ok": true
+  },
+  {
+   "week": 1,
+   "ratio": 1.098,
+   "wape": 0.27708198503637926,
+   "version": 1,
+   "quality_ok": true
+  },
+  {
+   "week": 2,
+   "ratio": 1.308,
+   "wape": 0.33013508658654966,
+   "version": 1,
+   "quality_ok": true
+  }
+ ]
+}

@@ -1,0 +1,841 @@
+{
+ "row": {
+  "week": 30,
+  "start": "2011-10-28",
+  "live_version": 13,
+  "fault": [
+   "temp_celsius"
+  ],
+  "alerts": [
+   "quality",
+   "drift",
+   "jump"
+  ],
+  "cause": "pipeline_fault",
+  "action": "alert",
+  "reason": "Week 30 temp was 100% out of domain (valid range 0\u20131); quality failure exceeds the 5% limit.; Temp jumped 112.2 standard deviations, consistent with a step fault; week 29 temp passed quality.; Week 29 WAPE was 0.1657 (0.82\u00d7 baseline); its labels are clean and show no rising error.; Temp, atemp, and mnth drifted, but none are important; retraining is blocked on the failed batch.",
+  "confidence": 0.99,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": null,
+  "wape": null,
+  "path": "llm"
+ },
+ "features": [
+  {
+   "feature": "season",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "mnth",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 1.0,
+   "jump": null,
+   "flags": [
+    "drift"
+   ]
+  },
+  {
+   "feature": "hr",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "holiday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "weekday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "workingday",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": null,
+   "psi_threshold": null,
+   "psi_ratio": null,
+   "ks_pvalue": null,
+   "unseen": 0.0,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "weathersit",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.0796,
+   "psi_threshold": 0.837,
+   "psi_ratio": 0.0951015531660693,
+   "ks_pvalue": 0.632,
+   "unseen": null,
+   "jump": null,
+   "flags": []
+  },
+  {
+   "feature": "temp",
+   "missing": 0.0,
+   "out_of_domain": 1.0,
+   "psi": 7.9822,
+   "psi_threshold": 4.495,
+   "psi_ratio": 1.7757953281423804,
+   "ks_pvalue": 6.9e-308,
+   "unseen": null,
+   "jump": 112.1501,
+   "flags": [
+    "quality",
+    "drift",
+    "jump"
+   ]
+  },
+  {
+   "feature": "atemp",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 7.1865,
+   "psi_threshold": 4.571,
+   "psi_ratio": 1.5721942682126449,
+   "ks_pvalue": 4.99e-125,
+   "unseen": null,
+   "jump": 0.9288,
+   "flags": [
+    "drift"
+   ]
+  },
+  {
+   "feature": "hum",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.2779,
+   "psi_threshold": 2.593,
+   "psi_ratio": 0.1071731585036637,
+   "ks_pvalue": 0.00234,
+   "unseen": null,
+   "jump": 0.0207,
+   "flags": []
+  },
+  {
+   "feature": "windspeed",
+   "missing": 0.0,
+   "out_of_domain": 0.0,
+   "psi": 0.0706,
+   "psi_threshold": 0.965,
+   "psi_ratio": 0.07316062176165802,
+   "ks_pvalue": 0.787,
+   "unseen": null,
+   "jump": 0.2191,
+   "flags": []
+  }
+ ],
+ "error": {
+  "week": 29,
+  "version": 13,
+  "mae": 28.027727050548645,
+  "wape": 0.16568114512639592,
+  "baseline_wape": 0.20195361256905855,
+  "shadow_version": 9,
+  "shadow_wape": 0.20165202478923597,
+  "quality_ok": true,
+  "ratio": 0.82
+ },
+ "gate": null,
+ "details": {
+  "path": "llm",
+  "confidence": 0.99,
+  "evidence": [
+   "Week 30 temp was 100% out of domain (valid range 0\u20131); quality failure exceeds the 5% limit.",
+   "Temp jumped 112.2 standard deviations, consistent with a step fault; week 29 temp passed quality.",
+   "Week 29 WAPE was 0.1657 (0.82\u00d7 baseline); its labels are clean and show no rising error.",
+   "Temp, atemp, and mnth drifted, but none are important; retraining is blocked on the failed batch."
+  ],
+  "answer": {
+   "cause": "pipeline_fault",
+   "action": "alert",
+   "confidence": 0.99,
+   "evidence": [
+    "Week 30 temp was 100% out of domain (valid range 0\u20131); quality failure exceeds the 5% limit.",
+    "Temp jumped 112.2 standard deviations, consistent with a step fault; week 29 temp passed quality.",
+    "Week 29 WAPE was 0.1657 (0.82\u00d7 baseline); its labels are clean and show no rising error.",
+    "Temp, atemp, and mnth drifted, but none are important; retraining is blocked on the failed batch."
+   ]
+  },
+  "raw_answer": null,
+  "notes": [],
+  "tool_calls": [
+   {
+    "turn": 1,
+    "tool": "get_monitoring_report",
+    "args": {},
+    "result": {
+     "week": 30,
+     "inputs": {
+      "week": 30,
+      "n_rows": 168,
+      "missing": {
+       "season": 0.0,
+       "mnth": 0.0,
+       "hr": 0.0,
+       "holiday": 0.0,
+       "weekday": 0.0,
+       "workingday": 0.0,
+       "weathersit": 0.0,
+       "temp": 0.0,
+       "atemp": 0.0,
+       "hum": 0.0,
+       "windspeed": 0.0
+      },
+      "out_of_domain": {
+       "season": 0.0,
+       "mnth": 0.0,
+       "hr": 0.0,
+       "holiday": 0.0,
+       "weekday": 0.0,
+       "workingday": 0.0,
+       "weathersit": 0.0,
+       "temp": 1.0,
+       "atemp": 0.0,
+       "hum": 0.0,
+       "windspeed": 0.0
+      },
+      "psi": {
+       "weathersit": 0.0796,
+       "temp": 7.982,
+       "atemp": 7.186,
+       "hum": 0.2779,
+       "windspeed": 0.0706
+      },
+      "psi_threshold": {
+       "weathersit": 0.837,
+       "temp": 4.495,
+       "atemp": 4.571,
+       "hum": 2.593,
+       "windspeed": 0.965
+      },
+      "ks_pvalue": {
+       "weathersit": 0.632,
+       "temp": 6.9e-308,
+       "atemp": 4.99e-125,
+       "hum": 0.00234,
+       "windspeed": 0.787
+      },
+      "unseen": {
+       "season": 0.0,
+       "mnth": 1.0,
+       "hr": 0.0,
+       "holiday": 0.0,
+       "weekday": 0.0,
+       "workingday": 0.0
+      },
+      "jump": {
+       "temp": 112.2,
+       "atemp": 0.9288,
+       "hum": 0.0207,
+       "windspeed": 0.2191
+      },
+      "quality_failed": [
+       "temp"
+      ],
+      "drifted": [
+       "temp",
+       "atemp",
+       "mnth"
+      ],
+      "jumped": [
+       "temp"
+      ],
+      "alerts": [
+       "quality",
+       "drift",
+       "jump"
+      ]
+     },
+     "labels": {
+      "week": 29,
+      "version": 13,
+      "mae": 28.03,
+      "wape": 0.1657,
+      "baseline_wape": 0.202,
+      "shadow_version": 9,
+      "shadow_wape": 0.2017,
+      "quality_ok": true,
+      "ratio": 0.82
+     },
+     "error_rising": false,
+     "error_alert": false,
+     "weeks_since_last_challenger": 3,
+     "scheduled_check_due": false,
+     "champion": {
+      "version": 13,
+      "status": "champion",
+      "parent": 9,
+      "created_week": 27,
+      "train_weeks": [
+       1,
+       25
+      ],
+      "n_rows": 4183,
+      "baseline_mae": 33.62,
+      "baseline_wape": 0.202,
+      "promoted_week": 27,
+      "important_features": [
+       "hr",
+       "workingday",
+       "hum"
+      ]
+     },
+     "rollback_evidence": {
+      "live": 13,
+      "previous": 9,
+      "weeks": [
+       28,
+       29
+      ],
+      "live_wape": 0.1621,
+      "previous_wape": 0.198,
+      "previous_better": false
+     },
+     "thresholds": {
+      "error_ratio": 1.25,
+      "error_weeks": 2,
+      "unseen_max_rate": 0.05,
+      "rollback_weeks": 6
+     }
+    }
+   },
+   {
+    "turn": 1,
+    "tool": "check_data_quality",
+    "args": {},
+    "result": {
+     "week": 30,
+     "n_rows": 168,
+     "features": {
+      "season": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        1,
+        4
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "mnth": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        1,
+        12
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "hr": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0,
+        23
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "holiday": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0,
+        1
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "weekday": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0,
+        6
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "workingday": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0,
+        1
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "weathersit": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        1,
+        4
+       ],
+       "jump_std": null,
+       "mean": null
+      },
+      "temp": {
+       "missing": 0.0,
+       "out_of_domain": 1.0,
+       "valid_domain": [
+        0.0,
+        1.0
+       ],
+       "jump_std": 112.2,
+       "mean": 14.24
+      },
+      "atemp": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0.0,
+        1.0
+       ],
+       "jump_std": 0.9288,
+       "mean": 0.3453
+      },
+      "hum": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0.0,
+        1.0
+       ],
+       "jump_std": 0.0207,
+       "mean": 0.7
+      },
+      "windspeed": {
+       "missing": 0.0,
+       "out_of_domain": 0.0,
+       "valid_domain": [
+        0.0,
+        1.0
+       ],
+       "jump_std": 0.2191,
+       "mean": 0.174
+      }
+     },
+     "quality_failed": [
+      "temp"
+     ],
+     "jumped": [
+      "temp"
+     ],
+     "thresholds": {
+      "missing_or_out_of_domain_max": 0.05,
+      "jump_max_std": 3.0
+     },
+     "retraining_allowed": false
+    }
+   },
+   {
+    "turn": 1,
+    "tool": "get_feature_importance",
+    "args": {},
+    "result": {
+     "champion": 13,
+     "mae_increase_when_shuffled": {
+      "season": 0.0,
+      "mnth": 0.0,
+      "hr": 102.8,
+      "holiday": -0.615,
+      "weekday": 3.619,
+      "workingday": 29.45,
+      "weathersit": 4.082,
+      "temp": 2.11,
+      "atemp": 0.733,
+      "hum": 15.54,
+      "windspeed": 0.267
+     },
+     "share": {
+      "season": 0.0,
+      "mnth": 0.0,
+      "hr": 0.6481,
+      "holiday": 0.0,
+      "weekday": 0.02282,
+      "workingday": 0.1857,
+      "weathersit": 0.02574,
+      "temp": 0.01331,
+      "atemp": 0.004623,
+      "hum": 0.09803,
+      "windspeed": 0.001684
+     },
+     "important_features": [
+      "hr",
+      "workingday",
+      "hum"
+     ],
+     "important_if_share_at_least": 0.05,
+     "drifted_important": [],
+     "drifted_unimportant": [
+      "temp",
+      "atemp",
+      "mnth"
+     ]
+    }
+   },
+   {
+    "turn": 1,
+    "tool": "compare_with_history",
+    "args": {
+     "weeks": 6
+    },
+    "result": {
+     "weeks": [
+      {
+       "week": 25,
+       "live_model": 11,
+       "alerts": [
+        "drift"
+       ],
+       "quality_failed": [],
+       "drifted": [
+        "windspeed",
+        "season",
+        "mnth"
+       ],
+       "jumped": [],
+       "psi_ratio": {
+        "weathersit": 0.4136,
+        "temp": 0.778,
+        "atemp": 0.7101,
+        "hum": 0.6755,
+        "windspeed": 1.632
+       },
+       "unseen": {
+        "season": 1.0,
+        "mnth": 1.0
+       },
+       "jump": {
+        "temp": 0.4353,
+        "atemp": 0.31,
+        "hum": 0.406,
+        "windspeed": 0.3352
+       },
+       "mean": {
+        "temp": 0.6268,
+        "atemp": 0.5675,
+        "hum": 0.8517,
+        "windspeed": 0.1082
+       }
+      },
+      {
+       "week": 26,
+       "live_model": 9,
+       "alerts": [
+        "drift"
+       ],
+       "quality_failed": [],
+       "drifted": [
+        "season",
+        "mnth"
+       ],
+       "jumped": [],
+       "psi_ratio": {
+        "weathersit": 0.04536,
+        "temp": 0.5086,
+        "atemp": 0.443,
+        "hum": 0.4979,
+        "windspeed": 0.1466
+       },
+       "unseen": {
+        "season": 1.0,
+        "mnth": 1.0
+       },
+       "jump": {
+        "temp": 0.8934,
+        "atemp": 0.6747,
+        "hum": 0.6882,
+        "windspeed": 0.6315
+       },
+       "mean": {
+        "temp": 0.4617,
+        "atemp": 0.4536,
+        "hum": 0.7046,
+        "windspeed": 0.1889
+       }
+      },
+      {
+       "week": 27,
+       "live_model": 9,
+       "alerts": [
+        "drift"
+       ],
+       "quality_failed": [],
+       "drifted": [
+        "season",
+        "mnth"
+       ],
+       "jumped": [],
+       "psi_ratio": {
+        "weathersit": 0.0239,
+        "temp": 0.5951,
+        "atemp": 0.6264,
+        "hum": 0.5249,
+        "windspeed": 0.8699
+       },
+       "unseen": {
+        "season": 1.0,
+        "mnth": 1.0
+       },
+       "jump": {
+        "temp": 0.4728,
+        "atemp": 0.4442,
+        "hum": 0.3516,
+        "windspeed": 0.6885
+       },
+       "mean": {
+        "temp": 0.549,
+        "atemp": 0.5286,
+        "hum": 0.7798,
+        "windspeed": 0.1009
+       }
+      },
+      {
+       "week": 28,
+       "live_model": 13,
+       "alerts": [
+        "drift"
+       ],
+       "quality_failed": [],
+       "drifted": [
+        "mnth"
+       ],
+       "jumped": [],
+       "psi_ratio": {
+        "weathersit": 0.0313,
+        "temp": 0.9803,
+        "atemp": 0.881,
+        "hum": 0.06757,
+        "windspeed": 0.3407
+       },
+       "unseen": {
+        "mnth": 1.0
+       },
+       "jump": {
+        "temp": 0.2217,
+        "atemp": 0.2045,
+        "hum": 0.7404,
+        "windspeed": 1.278
+       },
+       "mean": {
+        "temp": 0.5218,
+        "atemp": 0.5064,
+        "hum": 0.6412,
+        "windspeed": 0.245
+       }
+      },
+      {
+       "week": 29,
+       "live_model": 13,
+       "alerts": [
+        "drift"
+       ],
+       "quality_failed": [],
+       "drifted": [
+        "temp",
+        "atemp",
+        "mnth"
+       ],
+       "jumped": [],
+       "psi_ratio": {
+        "weathersit": 0.01027,
+        "temp": 1.42,
+        "atemp": 1.299,
+        "hum": 0.1174,
+        "windspeed": 0.2116
+       },
+       "unseen": {
+        "mnth": 1.0
+       },
+       "jump": {
+        "temp": 0.5715,
+        "atemp": 0.5581,
+        "hum": 0.2935,
+        "windspeed": 0.8484
+       },
+       "mean": {
+        "temp": 0.4515,
+        "atemp": 0.446,
+        "hum": 0.6961,
+        "windspeed": 0.1493
+       }
+      },
+      {
+       "week": 30,
+       "live_model": 13,
+       "alerts": [
+        "quality",
+        "drift",
+        "jump"
+       ],
+       "quality_failed": [
+        "temp"
+       ],
+       "drifted": [
+        "temp",
+        "atemp",
+        "mnth"
+       ],
+       "jumped": [
+        "temp"
+       ],
+       "psi_ratio": {
+        "weathersit": 0.0951,
+        "temp": 1.776,
+        "atemp": 1.572,
+        "hum": 0.1072,
+        "windspeed": 0.07316
+       },
+       "unseen": {
+        "mnth": 1.0
+       },
+       "jump": {
+        "temp": 112.2,
+        "atemp": 0.9288,
+        "hum": 0.0207,
+        "windspeed": 0.2191
+       },
+       "mean": {
+        "temp": 14.24,
+        "atemp": 0.3453,
+        "hum": 0.7,
+        "windspeed": 0.174
+       }
+      }
+     ],
+     "labelled_errors": [
+      {
+       "week": 24,
+       "model": 11,
+       "wape": 0.2035,
+       "ratio": 1.305,
+       "shadow_model": 9,
+       "shadow_wape": 0.1621,
+       "inputs_ok": true
+      },
+      {
+       "week": 25,
+       "model": 11,
+       "wape": 0.2025,
+       "ratio": 1.299,
+       "shadow_model": 9,
+       "shadow_wape": 0.1726,
+       "inputs_ok": true
+      },
+      {
+       "week": 26,
+       "model": 9,
+       "wape": 0.1612,
+       "ratio": 0.8978,
+       "shadow_model": 7,
+       "shadow_wape": 0.1697,
+       "inputs_ok": true
+      },
+      {
+       "week": 27,
+       "model": 9,
+       "wape": 0.2051,
+       "ratio": 1.142,
+       "shadow_model": 7,
+       "shadow_wape": 0.2354,
+       "inputs_ok": true
+      },
+      {
+       "week": 28,
+       "model": 13,
+       "wape": 0.1586,
+       "ratio": 0.7851,
+       "shadow_model": 9,
+       "shadow_wape": 0.1944,
+       "inputs_ok": true
+      },
+      {
+       "week": 29,
+       "model": 13,
+       "wape": 0.1657,
+       "ratio": 0.8204,
+       "shadow_model": 9,
+       "shadow_wape": 0.2017,
+       "inputs_ok": true
+      }
+     ],
+     "model_events": [
+      {
+       "week": 25,
+       "event": "rollback",
+       "version": 9,
+       "detail": "replaces v11: agent: Rollback evidence says previous v9 was better in shadow across weeks 23\u201324 (WAPE 0.146 vs live v11 0.1606); live promotion was week 19, within six weeks.; v9 vs live v11 on weeks [23, 24]: WAPE 0.146 vs 0.161, passed"
+      },
+      {
+       "week": 27,
+       "event": "promote",
+       "version": 13,
+       "detail": "scheduled check: no challenger for 4+ weeks; v13 vs v9 on week 26: MAE 23.2 vs 27.0 (+14.1%), passed"
+      }
+     ],
+     "notes": "psi_ratio = PSI / the then-live champion's threshold (> 1 = drifted); jump in reference std vs the last clean week; mean = weekly mean of the normalised weather features (valid domain 0-1)"
+    }
+   },
+   {
+    "turn": 2,
+    "tool": "train_challenger",
+    "args": {
+     "reason": "Scheduled freshness retraining is not due yet (3 weeks), while week 30 failed quality: temp is 100% out of domain [0,1], jumped 112.2 std; do not train on this batch."
+    },
+    "result": {
+     "error": "refused: this week's batch failed quality checks (temp). Retraining is blocked until the pipeline is fixed. No model was trained."
+    }
+   }
+  ],
+  "llm_model": "gpt-6-luna",
+  "turns": 3,
+  "cached_turns": 3,
+  "corrected": false,
+  "fallback": false
+ }
+}

@@ -1,0 +1,62 @@
+[
+ {
+  "week": 0,
+  "start": "2011-04-01",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "noise",
+  "action": "none",
+  "reason": "drift only in unimportant mnth",
+  "confidence": null,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 23.34997811702063,
+  "wape": 0.21105053659328915,
+  "path": "fast"
+ },
+ {
+  "week": 1,
+  "start": "2011-04-08",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "watch",
+  "reason": "temp drifted: PSI 4.895 exceeds its 4.83 threshold and it is important; mnth is unseen at rate 1.0, but is unimportant; Week 0 WAPE was 0.2111, or 0.836\u00d7 baseline; error is not rising; Inputs passed quality checks; no feature jumped",
+  "confidence": 0.94,
+  "gate": null,
+  "challenger": null,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": 29.254548264439755,
+  "wape": 0.27708198503637926,
+  "path": "llm"
+ },
+ {
+  "week": 2,
+  "start": "2011-04-15",
+  "live_version": 1,
+  "fault": [],
+  "alerts": [
+   "drift"
+  ],
+  "cause": "genuine_drift",
+  "action": "retrain",
+  "reason": "Inputs passed quality checks; no features jumped.; Important feature temp drifted for two weeks: PSI/threshold rose from 1.013 to 1.416.; Temp weekly mean rose gradually from 0.4013 to 0.4395 to 0.4867.; Week 1 WAPE was 0.2771, or 1.098x baseline\u2014below the 1.25x error-rise trigger.; Challenger v2 was proposed; it beat v1 on the holdout (MAE 25.44 vs 29.25) and awaits human approval. (awaiting human approval)",
+  "confidence": 0.92,
+  "gate": "v2 vs v1 on week 1: MAE 25.4 vs 29.3 (+13.1%), awaiting human approval",
+  "challenger": 2,
+  "promoted": false,
+  "rolled_back": false,
+  "mae": null,
+  "wape": null,
+  "path": "llm"
+ }
+]

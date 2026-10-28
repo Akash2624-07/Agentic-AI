@@ -1,0 +1,85 @@
+{
+ "week0": "2011-04-01",
+ "n_weeks": 92,
+ "faults": [
+  {
+   "kind": "temp_celsius",
+   "label": "Temperature arrives in \u00b0C instead of normalised (x41)",
+   "feature": "temp",
+   "start": 30,
+   "end": 32
+  },
+  {
+   "kind": "hum_missing",
+   "label": "Humidity feed goes empty",
+   "feature": "hum",
+   "start": 60,
+   "end": 63
+  }
+ ],
+ "thresholds": {
+  "quality_max_rate": 0.05,
+  "jump_max": 3.0,
+  "unseen_max_rate": 0.05,
+  "error_ratio": 1.25,
+  "error_weeks": 2,
+  "min_improvement": 0.05,
+  "rollback_weeks": 6,
+  "stale_weeks": 4,
+  "window_weeks": 26
+ },
+ "policies": [
+  {
+   "name": "never",
+   "label": "Never retrain",
+   "description": "The original Jan-Mar 2011 model stays live for all 92 weeks.",
+   "uses_llm": false
+  },
+  {
+   "name": "on_alert",
+   "label": "Retrain on every alert",
+   "description": "Naive automation: any alert retrains on recent data, faulty weeks included, and promotes without the safety gate.",
+   "uses_llm": false
+  },
+  {
+   "name": "rules",
+   "label": "Rule-based",
+   "description": "The decision table as fixed rules: block retraining on faulty data, retrain through the safety gate, roll back bad promotions.",
+   "uses_llm": false
+  },
+  {
+   "name": "agent",
+   "label": "LLM agent",
+   "description": "Investigates each non-quiet week with tools and returns a diagnosis with evidence and confidence; same safety gate as the rules.",
+   "uses_llm": true
+  }
+ ],
+ "llm": {
+  "provider": "openai",
+  "model": "gpt-6-luna",
+  "configured": true
+ },
+ "features": {
+  "calendar": [
+   "season",
+   "mnth",
+   "hr",
+   "holiday",
+   "weekday",
+   "workingday"
+  ],
+  "weather": [
+   "weathersit",
+   "temp",
+   "atemp",
+   "hum",
+   "windspeed"
+  ],
+  "normalised": [
+   "temp",
+   "atemp",
+   "hum",
+   "windspeed"
+  ]
+ }
+}

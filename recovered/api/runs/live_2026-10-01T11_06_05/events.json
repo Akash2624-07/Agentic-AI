@@ -1,0 +1,245 @@
+[
+ {
+  "seq": 0,
+  "week": -1,
+  "event": "register",
+  "version": 1,
+  "detail": "trained on 2067 rows",
+  "train_weeks": "-13..-1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 1,
+  "week": -1,
+  "event": "promote",
+  "version": 1,
+  "detail": "initial model, Jan-Mar 2011",
+  "train_weeks": "-13..-1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 2,
+  "week": 2,
+  "event": "register",
+  "version": 2,
+  "detail": "trained on 2235 rows",
+  "train_weeks": "-13..0",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 3,
+  "week": 2,
+  "event": "promote",
+  "version": 2,
+  "detail": "agent: Important temp drifted for two consecutive weeks (PSI/threshold 1.013 then 1.416), with seasonal means rising gradually from 0.4013 to 0.4395 to 0.4867 and no jump; clean inputs, and WAPE is 1.10x baseline (below the 1.25x error-rise trigger).; v2 vs v1 on week 1: MAE 25.4 vs 29.3 (+13.1%), passed",
+  "train_weeks": "-13..0",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 4,
+  "week": 3,
+  "event": "register",
+  "version": 3,
+  "detail": "trained on 2402 rows",
+  "train_weeks": "-13..1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 5,
+  "week": 3,
+  "event": "promote",
+  "version": 3,
+  "detail": "agent: Clean week-3 inputs; important temp drifted (PSI 5.391 vs threshold 4.795), and latest clean labelled WAPE is 0.3301, 1.308x baseline 0.2524, exceeding the 1.25 drift/error trigger. Weather means rise gradually across weeks without a >3 SD jump.; v3 vs v2 on week 2: MAE 38.8 vs 41.8 (+7.1%), passed",
+  "train_weeks": "-13..1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 6,
+  "week": 4,
+  "event": "register",
+  "version": 4,
+  "detail": "trained on 2570 rows",
+  "train_weeks": "-13..2",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 7,
+  "week": 4,
+  "event": "reject",
+  "version": 4,
+  "detail": "v4 vs v3 on week 3: MAE 47.3 vs 46.2 (-2.5%), blocked: beats_champion",
+  "train_weeks": "-13..2",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 8,
+  "week": 5,
+  "event": "register",
+  "version": 5,
+  "detail": "trained on 2738 rows",
+  "train_weeks": "-13..3",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 9,
+  "week": 5,
+  "event": "promote",
+  "version": 5,
+  "detail": "agent: Clean inputs; important temp drifted (PSI 6.055 > threshold 5.319), and week-4 WAPE 0.320 is 1.30x baseline, above the 1.25 drift/error trigger; history shows gradual seasonal means without a >3 SD jump.; v5 vs v3 on week 4: MAE 42.8 vs 55.6 (+23.0%), passed",
+  "train_weeks": "-13..3",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 10,
+  "week": 6,
+  "event": "register",
+  "version": 6,
+  "detail": "trained on 2906 rows",
+  "train_weeks": "-13..4",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 11,
+  "week": 6,
+  "event": "promote",
+  "version": 6,
+  "detail": "agent: Inputs are clean; important feature hum and temp are drifted (PSI/threshold 1.996 and 1.178), and latest clean labelled WAPE is 0.329, 1.33x baseline 0.2469 (>1.25), indicating genuine drift.; v6 vs v5 on week 5: MAE 38.7 vs 49.5 (+21.7%), passed",
+  "train_weeks": "-13..4",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 12,
+  "week": 8,
+  "event": "register",
+  "version": 7,
+  "detail": "trained on 3242 rows",
+  "train_weeks": "-13..6",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 13,
+  "week": 8,
+  "event": "promote",
+  "version": 7,
+  "detail": "agent: Clean inputs and important temp drift (PSI 7.706 exceeds its 5.689 threshold); week-7 WAPE 0.1792 is only 0.55x baseline, so error is not rising. No jump (0.5745 SD); recent temp means rise gradually, consistent with seasonal movement.; v7 vs v6 on week 7: MAE 29.4 vs 36.1 (+18.5%), passed",
+  "train_weeks": "-13..6",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 14,
+  "week": 9,
+  "event": "register",
+  "version": 8,
+  "detail": "trained on 3410 rows",
+  "train_weeks": "-13..7",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 15,
+  "week": 9,
+  "event": "reject",
+  "version": 8,
+  "detail": "v8 vs v7 on week 8: MAE 35.8 vs 33.3 (-7.4%), blocked: beats_champion",
+  "train_weeks": "-13..7",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 16,
+  "week": 11,
+  "event": "register",
+  "version": 9,
+  "detail": "trained on 3746 rows",
+  "train_weeks": "-13..9",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 17,
+  "week": 11,
+  "event": "promote",
+  "version": 9,
+  "detail": "agent: Clean week 11 has important temp drift (PSI 7.364 > 6.82 threshold), but latest clean labelled WAPE is only 0.1681 (0.56x baseline), so error is not rising; training a challenger is not currently indicated.; v9 vs v7 on week 10: MAE 24.9 vs 32.9 (+24.2%), passed",
+  "train_weeks": "-13..9",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 18,
+  "week": 15,
+  "event": "register",
+  "version": 10,
+  "detail": "trained on 4117 rows",
+  "train_weeks": "-11..13",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 19,
+  "week": 15,
+  "event": "reject",
+  "version": 10,
+  "detail": "v10 vs v9 on week 14: MAE 27.0 vs 26.7 (-0.8%), blocked: beats_champion",
+  "train_weeks": "-11..13",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 20,
+  "week": 19,
+  "event": "register",
+  "version": 11,
+  "detail": "trained on 4167 rows",
+  "train_weeks": "-7..17",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 21,
+  "week": 19,
+  "event": "promote",
+  "version": 11,
+  "detail": "scheduled check: no challenger for 4+ weeks; v11 vs v9 on week 18: MAE 20.5 vs 26.1 (+21.5%), passed",
+  "train_weeks": "-7..17",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 22,
+  "week": 23,
+  "event": "register",
+  "version": 12,
+  "detail": "trained on 4176 rows",
+  "train_weeks": "-3..21",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 23,
+  "week": 23,
+  "event": "reject",
+  "version": 12,
+  "detail": "v12 vs v11 on week 22: MAE 34.7 vs 35.4 (+1.8%), blocked: beats_champion",
+  "train_weeks": "-3..21",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 24,
+  "week": 25,
+  "event": "rollback",
+  "version": 9,
+  "detail": "replaces v11: agent: Rollback evidence says previous v9 was better in shadow across weeks 23\u201324 (WAPE 0.146 vs live v11 0.1606); live promotion was week 19, within six weeks.; v9 vs live v11 on weeks [23, 24]: WAPE 0.146 vs 0.161, passed",
+  "train_weeks": "-13..9",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 25,
+  "week": 27,
+  "event": "register",
+  "version": 13,
+  "detail": "trained on 4183 rows",
+  "train_weeks": "1..25",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 26,
+  "week": 27,
+  "event": "promote",
+  "version": 13,
+  "detail": "scheduled check: no challenger for 4+ weeks; v13 vs v9 on week 26: MAE 23.2 vs 27.0 (+14.1%), passed",
+  "train_weeks": "1..25",
+  "trained_on_faulty": false
+ }
+]

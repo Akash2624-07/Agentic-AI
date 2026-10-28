@@ -1,0 +1,1098 @@
+{
+ "run_id": "live:2026-10-01T09:22:34",
+ "policy": "rules",
+ "weeks": [
+  {
+   "week": 0,
+   "start": "2011-04-01",
+   "fault": [],
+   "live_version": 1,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 1,
+   "start": "2011-04-08",
+   "fault": [],
+   "live_version": 1,
+   "action": "watch",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 2,
+   "start": "2011-04-15",
+   "fault": [],
+   "live_version": 1,
+   "action": "watch",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 3,
+   "start": "2011-04-22",
+   "fault": [],
+   "live_version": 1,
+   "action": "retrain",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 4,
+   "start": "2011-04-29",
+   "fault": [],
+   "live_version": 2,
+   "action": "watch",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 5,
+   "start": "2011-05-06",
+   "fault": [],
+   "live_version": 2,
+   "action": "retrain",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 6,
+   "start": "2011-05-13",
+   "fault": [],
+   "live_version": 3,
+   "action": "watch",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 7,
+   "start": "2011-05-20",
+   "fault": [],
+   "live_version": 3,
+   "action": "watch",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 8,
+   "start": "2011-05-27",
+   "fault": [],
+   "live_version": 3,
+   "action": "watch",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 9,
+   "start": "2011-06-03",
+   "fault": [],
+   "live_version": 3,
+   "action": "retrain",
+   "cause": "none",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 10,
+   "start": "2011-06-10",
+   "fault": [],
+   "live_version": 4,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 11,
+   "start": "2011-06-17",
+   "fault": [],
+   "live_version": 4,
+   "action": "watch",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 12,
+   "start": "2011-06-24",
+   "fault": [],
+   "live_version": 4,
+   "action": "watch",
+   "cause": "genuine_drift",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 13,
+   "start": "2011-07-01",
+   "fault": [],
+   "live_version": 4,
+   "action": "retrain",
+   "cause": "none",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 14,
+   "start": "2011-07-08",
+   "fault": [],
+   "live_version": 5,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 15,
+   "start": "2011-07-15",
+   "fault": [],
+   "live_version": 5,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 16,
+   "start": "2011-07-22",
+   "fault": [],
+   "live_version": 5,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 17,
+   "start": "2011-07-29",
+   "fault": [],
+   "live_version": 5,
+   "action": "retrain",
+   "cause": "none",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 18,
+   "start": "2011-08-05",
+   "fault": [],
+   "live_version": 5,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 19,
+   "start": "2011-08-12",
+   "fault": [],
+   "live_version": 5,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 20,
+   "start": "2011-08-19",
+   "fault": [],
+   "live_version": 5,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 21,
+   "start": "2011-08-26",
+   "fault": [],
+   "live_version": 5,
+   "action": "retrain",
+   "cause": "none",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 22,
+   "start": "2011-09-02",
+   "fault": [],
+   "live_version": 7,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 23,
+   "start": "2011-09-09",
+   "fault": [],
+   "live_version": 7,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 24,
+   "start": "2011-09-16",
+   "fault": [],
+   "live_version": 7,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 25,
+   "start": "2011-09-23",
+   "fault": [],
+   "live_version": 7,
+   "action": "rollback",
+   "cause": "bad_update",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 26,
+   "start": "2011-09-30",
+   "fault": [],
+   "live_version": 5,
+   "action": "retrain",
+   "cause": "none",
+   "alerts": [
+    "drift"
+   ]
+  },
+  {
+   "week": 27,
+   "start": "2011-10-07",
+   "fault": [],
+   "live_version": 5,
+   "action": "none",
+   "cause": "noise",
+   "alerts": [
+    "drift"
+   ]
+  }
+ ],
+ "quality": {
+  "features": [],
+  "rows": []
+ },
+ "drift": {
+  "features": [
+   "atemp",
+   "hum",
+   "temp",
+   "weathersit",
+   "windspeed"
+  ],
+  "rows": [
+   {
+    "week": 0,
+    "atemp": 0.6049714034315882,
+    "hum": 0.050619082301529505,
+    "temp": 0.550600414078675,
+    "weathersit": 0.01981032665964173,
+    "windspeed": 0.2239457831325301
+   },
+   {
+    "week": 1,
+    "atemp": 0.9204355477342719,
+    "hum": 0.9140568099053168,
+    "temp": 1.013416149068323,
+    "weathersit": 0.3360379346680717,
+    "windspeed": 0.14186746987951807
+   },
+   {
+    "week": 2,
+    "atemp": 1.3774087109546853,
+    "hum": 0.08412235979606701,
+    "temp": 1.4163768115942028,
+    "weathersit": 0.006217070600632244,
+    "windspeed": 0.24593373493975904
+   },
+   {
+    "week": 3,
+    "atemp": 1.2066871975362956,
+    "hum": 1.5375091041514932,
+    "temp": 1.1491097308488614,
+    "weathersit": 0.05015806111696523,
+    "windspeed": 0.37243975903614457
+   },
+   {
+    "week": 4,
+    "atemp": 1.0114280055456526,
+    "hum": 0.20484903934126258,
+    "temp": 1.052190261327317,
+    "weathersit": 0.025,
+    "windspeed": 0.22556237218813904
+   },
+   {
+    "week": 5,
+    "atemp": 1.2211725094078034,
+    "hum": 0.31957913998170173,
+    "temp": 1.1384470765181425,
+    "weathersit": 0.2521825396825397,
+    "windspeed": 0.9292433537832312
+   },
+   {
+    "week": 6,
+    "atemp": 1.1354027119751673,
+    "hum": 1.9963314358001267,
+    "temp": 1.1775952582557154,
+    "weathersit": 0.15346534653465346,
+    "windspeed": 0.7304439746300211
+   },
+   {
+    "week": 7,
+    "atemp": 1.1702826335566083,
+    "hum": 0.6819101834282101,
+    "temp": 1.2137341236240473,
+    "weathersit": 0.07920792079207921,
+    "windspeed": 0.66553911205074
+   },
+   {
+    "week": 8,
+    "atemp": 1.3178238849861132,
+    "hum": 0.15781151170145477,
+    "temp": 1.3666892464013547,
+    "weathersit": 0.3502970297029703,
+    "windspeed": 0.38287526427061314
+   },
+   {
+    "week": 9,
+    "atemp": 1.2500081685999018,
+    "hum": 0.23997469955724227,
+    "temp": 1.296392887383573,
+    "weathersit": 0.32524752475247526,
+    "windspeed": 1.2678646934460889
+   },
+   {
+    "week": 10,
+    "atemp": 1.0034962822338238,
+    "hum": 0.344349759170063,
+    "temp": 0.9742207891908492,
+    "weathersit": 0.4038541666666667,
+    "windspeed": 0.08395904436860069
+   },
+   {
+    "week": 11,
+    "atemp": 1.1047302641987027,
+    "hum": 0.4609484994442386,
+    "temp": 1.1078151389528637,
+    "weathersit": 0.021875000000000002,
+    "windspeed": 0.40776450511945395
+   },
+   {
+    "week": 12,
+    "atemp": 1.196171491852555,
+    "hum": 0.3351241200444609,
+    "temp": 1.1565637954859511,
+    "weathersit": 0.26645833333333335,
+    "windspeed": 0.20511945392491468
+   },
+   {
+    "week": 13,
+    "atemp": 1.196171491852555,
+    "hum": 0.11330122267506486,
+    "temp": 1.1731306617534163,
+    "weathersit": 0.18125,
+    "windspeed": 0.6188566552901024
+   },
+   {
+    "week": 14,
+    "atemp": 0.9114328582145537,
+    "hum": 0.14768305624336753,
+    "temp": 0.9372777528761393,
+    "weathersit": 0.3730861244019139,
+    "windspeed": 0.09258760107816712
+   },
+   {
+    "week": 15,
+    "atemp": 0.9207801950487621,
+    "hum": 0.7729395118500176,
+    "temp": 0.8996563573883162,
+    "weathersit": 0.5098086124401915,
+    "windspeed": 0.5428571428571428
+   },
+   {
+    "week": 16,
+    "atemp": 1.133503375843961,
+    "hum": 0.28496639547223207,
+    "temp": 1.1162856715971912,
+    "weathersit": 0.5886363636363636,
+    "windspeed": 0.43814016172506737
+   },
+   {
+    "week": 17,
+    "atemp": 1.071357839459865,
+    "hum": 0.114821365405023,
+    "temp": 1.052622142536979,
+    "weathersit": 0.06782296650717703,
+    "windspeed": 0.30026954177897575
+   },
+   {
+    "week": 18,
+    "atemp": 0.9565341335333833,
+    "hum": 0.2587548638132296,
+    "temp": 1.0418198117436128,
+    "weathersit": 0.38325358851674646,
+    "windspeed": 0.15188679245283018
+   },
+   {
+    "week": 19,
+    "atemp": 0.8582445611402851,
+    "hum": 0.11457375309515389,
+    "temp": 0.8656357388316153,
+    "weathersit": 0.08349282296650719,
+    "windspeed": 0.1326145552560647
+   },
+   {
+    "week": 20,
+    "atemp": 0.8451612903225807,
+    "hum": 0.31450300672090553,
+    "temp": 0.8468250410877036,
+    "weathersit": 0.2565789473684211,
+    "windspeed": 0.2747978436657682
+   },
+   {
+    "week": 21,
+    "atemp": 0.7417254313578394,
+    "hum": 0.3876193845065441,
+    "temp": 0.7435230838189153,
+    "weathersit": 0.2051435406698565,
+    "windspeed": 0.952156334231806
+   },
+   {
+    "week": 22,
+    "atemp": 0.3977548459071259,
+    "hum": 1.0163127116035704,
+    "temp": 0.47412220071882777,
+    "weathersit": 1.3081739130434784,
+    "windspeed": 0.2088176352705411
+   },
+   {
+    "week": 23,
+    "atemp": 0.37116162320457396,
+    "hum": 0.4995690981840566,
+    "temp": 0.3778545756151507,
+    "weathersit": 0.10191304347826087,
+    "windspeed": 0.47114228456913826
+   },
+   {
+    "week": 24,
+    "atemp": 0.6230093431878398,
+    "hum": 0.4073868882733149,
+    "temp": 0.6056262095659386,
+    "weathersit": 1.1773913043478264,
+    "windspeed": 2.146693386773547
+   },
+   {
+    "week": 25,
+    "atemp": 0.5215311672012272,
+    "hum": 0.6492459218220991,
+    "temp": 0.6289328172518661,
+    "weathersit": 0.5168695652173914,
+    "windspeed": 1.9230460921843688
+   },
+   {
+    "week": 26,
+    "atemp": 0.5148537134283572,
+    "hum": 0.4643084541917227,
+    "temp": 0.501105632750635,
+    "weathersit": 0.0437799043062201,
+    "windspeed": 0.20148247978436656
+   },
+   {
+    "week": 27,
+    "atemp": 0.6051162790697675,
+    "hum": 0.5117085249380969,
+    "temp": 0.6063050948752428,
+    "weathersit": 0.027272727272727275,
+    "windspeed": 1.26455525606469
+   }
+  ]
+ },
+ "unseen": {
+  "features": [
+   "mnth",
+   "season"
+  ],
+  "rows": [
+   {
+    "week": 0,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 1,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 2,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 3,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 4,
+    "mnth": 0.7143,
+    "season": 0.0
+   },
+   {
+    "week": 5,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 6,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 7,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 8,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 9,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 10,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 11,
+    "mnth": 1.0,
+    "season": 0.4286
+   },
+   {
+    "week": 12,
+    "mnth": 1.0,
+    "season": 1.0
+   },
+   {
+    "week": 13,
+    "mnth": 1.0,
+    "season": 1.0
+   },
+   {
+    "week": 14,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 15,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 16,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 17,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 18,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 19,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 20,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 21,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 22,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 23,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 24,
+    "mnth": 1.0,
+    "season": 0.0
+   },
+   {
+    "week": 25,
+    "mnth": 1.0,
+    "season": 1.0
+   },
+   {
+    "week": 26,
+    "mnth": 1.0,
+    "season": 1.0
+   },
+   {
+    "week": 27,
+    "mnth": 1.0,
+    "season": 1.0
+   }
+  ]
+ },
+ "jump": {
+  "features": [
+   "atemp",
+   "hum",
+   "temp",
+   "windspeed"
+  ],
+  "rows": [
+   {
+    "week": 0,
+    "atemp": null,
+    "hum": null,
+    "temp": null,
+    "windspeed": null
+   },
+   {
+    "week": 1,
+    "atemp": 0.3804,
+    "hum": 0.9554,
+    "temp": 0.3424,
+    "windspeed": 0.4036
+   },
+   {
+    "week": 2,
+    "atemp": 0.398,
+    "hum": 0.7501,
+    "temp": 0.4224,
+    "windspeed": 0.3199
+   },
+   {
+    "week": 3,
+    "atemp": 0.4306,
+    "hum": 0.8045,
+    "temp": 0.5728,
+    "windspeed": 0.0301
+   },
+   {
+    "week": 4,
+    "atemp": 0.3349,
+    "hum": 0.7579,
+    "temp": 0.4406,
+    "windspeed": 0.0598
+   },
+   {
+    "week": 5,
+    "atemp": 0.2849,
+    "hum": 0.0729,
+    "temp": 0.2276,
+    "windspeed": 0.7196
+   },
+   {
+    "week": 6,
+    "atemp": 0.0562,
+    "hum": 1.1604,
+    "temp": 0.1458,
+    "windspeed": 0.1256
+   },
+   {
+    "week": 7,
+    "atemp": 0.5169,
+    "hum": 0.6326,
+    "temp": 0.5882,
+    "windspeed": 0.0074
+   },
+   {
+    "week": 8,
+    "atemp": 0.5196,
+    "hum": 0.3398,
+    "temp": 0.5882,
+    "windspeed": 0.2572
+   },
+   {
+    "week": 9,
+    "atemp": 0.0696,
+    "hum": 0.4323,
+    "temp": 0.1191,
+    "windspeed": 0.3405
+   },
+   {
+    "week": 10,
+    "atemp": 0.1524,
+    "hum": 0.2117,
+    "temp": 0.182,
+    "windspeed": 0.3264
+   },
+   {
+    "week": 11,
+    "atemp": 0.1044,
+    "hum": 0.5534,
+    "temp": 0.1373,
+    "windspeed": 0.3367
+   },
+   {
+    "week": 12,
+    "atemp": 0.0456,
+    "hum": 0.8028,
+    "temp": 0.113,
+    "windspeed": 0.1355
+   },
+   {
+    "week": 13,
+    "atemp": 0.1554,
+    "hum": 0.2341,
+    "temp": 0.1497,
+    "windspeed": 0.288
+   },
+   {
+    "week": 14,
+    "atemp": 0.0775,
+    "hum": 0.0696,
+    "temp": 0.0392,
+    "windspeed": 0.5469
+   },
+   {
+    "week": 15,
+    "atemp": 0.1121,
+    "hum": 0.1582,
+    "temp": 0.0012,
+    "windspeed": 0.1444
+   },
+   {
+    "week": 16,
+    "atemp": 0.2677,
+    "hum": 0.3851,
+    "temp": 0.3092,
+    "windspeed": 0.2629
+   },
+   {
+    "week": 17,
+    "atemp": 0.2335,
+    "hum": 0.021,
+    "temp": 0.1114,
+    "windspeed": 0.1318
+   },
+   {
+    "week": 18,
+    "atemp": 0.1514,
+    "hum": 0.1383,
+    "temp": 0.1843,
+    "windspeed": 0.136
+   },
+   {
+    "week": 19,
+    "atemp": 0.2396,
+    "hum": 0.2272,
+    "temp": 0.2363,
+    "windspeed": 0.067
+   },
+   {
+    "week": 20,
+    "atemp": 0.0296,
+    "hum": 0.0091,
+    "temp": 0.0655,
+    "windspeed": 0.0021
+   },
+   {
+    "week": 21,
+    "atemp": 0.0945,
+    "hum": 0.0098,
+    "temp": 0.0915,
+    "windspeed": 0.2233
+   },
+   {
+    "week": 22,
+    "atemp": 0.1866,
+    "hum": 0.8783,
+    "temp": 0.1462,
+    "windspeed": 0.2325
+   },
+   {
+    "week": 23,
+    "atemp": 0.0294,
+    "hum": 0.3815,
+    "temp": 0.029,
+    "windspeed": 0.3777
+   },
+   {
+    "week": 24,
+    "atemp": 0.512,
+    "hum": 0.1421,
+    "temp": 0.5543,
+    "windspeed": 0.0261
+   },
+   {
+    "week": 25,
+    "atemp": 0.3281,
+    "hum": 0.4181,
+    "temp": 0.4587,
+    "windspeed": 0.3516
+   },
+   {
+    "week": 26,
+    "atemp": 0.6436,
+    "hum": 0.7014,
+    "temp": 0.8491,
+    "windspeed": 0.6399
+   },
+   {
+    "week": 27,
+    "atemp": 0.4238,
+    "hum": 0.3584,
+    "temp": 0.4494,
+    "windspeed": 0.6977
+   }
+  ]
+ },
+ "error": [
+  {
+   "week": 0,
+   "ratio": 0.836,
+   "wape": 0.21105053659328915,
+   "version": 1,
+   "quality_ok": true
+  },
+  {
+   "week": 1,
+   "ratio": 1.098,
+   "wape": 0.27708198503637926,
+   "version": 1,
+   "quality_ok": true
+  },
+  {
+   "week": 2,
+   "ratio": 1.308,
+   "wape": 0.33013508658654966,
+   "version": 1,
+   "quality_ok": true
+  },
+  {
+   "week": 3,
+   "ratio": 1.657,
+   "wape": 0.4182209539647902,
+   "version": 1,
+   "quality_ok": true
+  },
+  {
+   "week": 4,
+   "ratio": 1.296,
+   "wape": 0.32003289072865293,
+   "version": 2,
+   "quality_ok": true
+  },
+  {
+   "week": 5,
+   "ratio": 1.332,
+   "wape": 0.3289853535329787,
+   "version": 2,
+   "quality_ok": true
+  },
+  {
+   "week": 6,
+   "ratio": 0.909,
+   "wape": 0.2761259165724935,
+   "version": 3,
+   "quality_ok": true
+  },
+  {
+   "week": 7,
+   "ratio": 0.775,
+   "wape": 0.23526079059637134,
+   "version": 3,
+   "quality_ok": true
+  },
+  {
+   "week": 8,
+   "ratio": 0.749,
+   "wape": 0.2274375962146942,
+   "version": 3,
+   "quality_ok": true
+  },
+  {
+   "week": 9,
+   "ratio": 0.806,
+   "wape": 0.24479852860552404,
+   "version": 3,
+   "quality_ok": true
+  },
+  {
+   "week": 10,
+   "ratio": 0.712,
+   "wape": 0.18056519826481943,
+   "version": 4,
+   "quality_ok": true
+  },
+  {
+   "week": 11,
+   "ratio": 0.598,
+   "wape": 0.1517388517058651,
+   "version": 4,
+   "quality_ok": true
+  },
+  {
+   "week": 12,
+   "ratio": 0.605,
+   "wape": 0.15341227978663075,
+   "version": 4,
+   "quality_ok": true
+  },
+  {
+   "week": 13,
+   "ratio": 0.742,
+   "wape": 0.18821682929894734,
+   "version": 4,
+   "quality_ok": true
+  },
+  {
+   "week": 14,
+   "ratio": 0.804,
+   "wape": 0.13428430571887628,
+   "version": 5,
+   "quality_ok": true
+  },
+  {
+   "week": 15,
+   "ratio": 0.62,
+   "wape": 0.10356542048626004,
+   "version": 5,
+   "quality_ok": true
+  },
+  {
+   "week": 16,
+   "ratio": 1.107,
+   "wape": 0.18481945235253966,
+   "version": 5,
+   "quality_ok": true
+  },
+  {
+   "week": 17,
+   "ratio": 0.903,
+   "wape": 0.15072146364649477,
+   "version": 5,
+   "quality_ok": true
+  },
+  {
+   "week": 18,
+   "ratio": 0.788,
+   "wape": 0.13155003096811704,
+   "version": 5,
+   "quality_ok": true
+  },
+  {
+   "week": 19,
+   "ratio": 0.958,
+   "wape": 0.15986826286168324,
+   "version": 5,
+   "quality_ok": true
+  },
+  {
+   "week": 20,
+   "ratio": 1.155,
+   "wape": 0.1927425189357837,
+   "version": 5,
+   "quality_ok": true
+  },
+  {
+   "week": 21,
+   "ratio": 1.109,
+   "wape": 0.18516425503302555,
+   "version": 5,
+   "quality_ok": true
+  },
+  {
+   "week": 22,
+   "ratio": 1.665,
+   "wape": 0.24727399200030734,
+   "version": 7,
+   "quality_ok": true
+  },
+  {
+   "week": 23,
+   "ratio": 0.878,
+   "wape": 0.13044458451386656,
+   "version": 7,
+   "quality_ok": true
+  },
+  {
+   "week": 24,
+   "ratio": 1.391,
+   "wape": 0.2065217219901811,
+   "version": 7,
+   "quality_ok": true
+  },
+  {
+   "week": 25,
+   "ratio": 1.543,
+   "wape": 0.22905192695811333,
+   "version": 7,
+   "quality_ok": true
+  },
+  {
+   "week": 26,
+   "ratio": 0.957,
+   "wape": 0.15972079272471634,
+   "version": 5,
+   "quality_ok": true
+  }
+ ]
+}

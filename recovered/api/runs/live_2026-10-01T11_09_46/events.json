@@ -1,0 +1,74 @@
+[
+ {
+  "seq": 0,
+  "week": -1,
+  "event": "register",
+  "version": 1,
+  "detail": "trained on 2067 rows",
+  "train_weeks": "-13..-1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 1,
+  "week": -1,
+  "event": "promote",
+  "version": 1,
+  "detail": "initial model, Jan-Mar 2011",
+  "train_weeks": "-13..-1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 2,
+  "week": 2,
+  "event": "register",
+  "version": 2,
+  "detail": "trained on 2235 rows",
+  "train_weeks": "-13..0",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 3,
+  "week": 2,
+  "event": "awaiting_approval",
+  "version": 2,
+  "detail": "v2 vs v1 on week 1: MAE 25.4 vs 29.3 (+13.1%), awaiting human approval",
+  "train_weeks": "-13..0",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 4,
+  "week": 2,
+  "event": "promote",
+  "version": 2,
+  "detail": "agent: Important temp drifted for two consecutive weeks (PSI/threshold 1.013 then 1.416), with seasonal means rising gradually from 0.4013 to 0.4395 to 0.4867 and no jump; clean inputs, and WAPE is 1.10x baseline (below the 1.25x error-rise trigger).; human approved",
+  "train_weeks": "-13..0",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 5,
+  "week": 3,
+  "event": "register",
+  "version": 3,
+  "detail": "trained on 2402 rows",
+  "train_weeks": "-13..1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 6,
+  "week": 3,
+  "event": "awaiting_approval",
+  "version": 3,
+  "detail": "v3 vs v2 on week 2: MAE 38.8 vs 41.8 (+7.1%), awaiting human approval",
+  "train_weeks": "-13..1",
+  "trained_on_faulty": false
+ },
+ {
+  "seq": 7,
+  "week": 3,
+  "event": "promote",
+  "version": 3,
+  "detail": "agent: Clean inputs; temp is an important drifted feature (PSI 5.391 vs threshold 4.795), and labelled WAPE is 0.3301, 1.31x the live champion baseline 0.2524. Weather means rose gradually (temp 0.4013\u21920.4395\u21920.4867\u21920.5506), with no >3\u03c3 jumps; train for genuine drift.; human approved",
+  "train_weeks": "-13..1",
+  "trained_on_faulty": false
+ }
+]
